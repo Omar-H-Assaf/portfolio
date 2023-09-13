@@ -24,6 +24,7 @@ export const NavLabelContainer = styled.div({
 export const NavLabel = styled.div({
     margin: '1rem',
     color: '#EBEBEB',
+    fontSize: '1.5rem',
     cursor: 'pointer',
     '&:hover': {
         color: '#65d2a3'

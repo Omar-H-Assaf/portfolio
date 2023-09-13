@@ -60,6 +60,7 @@ export default function Home() {
           scroll-behavior: smooth;
           background-color: #000;
           width: fit-content;
+          overflow-x: clip;
           font-family:
             -apple-system,
             BlinkMacSystemFont,

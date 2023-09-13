@@ -10,6 +10,8 @@ export const AboutContainer = styled.div({
     padding: '4rem',
     paddingLeft: '10rem',
     paddingRight: '10rem',
+    zIndex: 100,
+    position: 'relative',
 });
 
 export const Aboutcontentcontainer = styled.div({
