@@ -1,5 +1,9 @@
 import { styled } from "styled-components";
 
+export default function Home1() {
+    return <>{/* nothing */}</>;
+}
+
 export const Href = styled.a({
     color: '#EBEBEB',
     cursor: 'pointer',

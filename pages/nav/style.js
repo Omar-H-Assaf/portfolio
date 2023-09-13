@@ -49,3 +49,7 @@ export const Button = styled.div({
         borderColor: '#65d2a3',
     }
 })
+
+export default function Home1() {
+    return <>{/* nothing */}</>;
+};

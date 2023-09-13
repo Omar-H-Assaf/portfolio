@@ -26,4 +26,8 @@ export const ContentLabel = styled.div({
     fontFamily: 'Andale Mono, monospace',
     fontSize: '1rem',
     lineHeight: '2rem'
-})
+});
+
+export default function Home1() {
+    return <>{/* nothing */}</>;
+};

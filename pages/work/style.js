@@ -52,3 +52,7 @@ export const ViewImageButton = styled.div({
         color: '#EBEBEB'
     }
 });
+
+export default function Home1() {
+    return <>{/* nothing */}</>;
+};

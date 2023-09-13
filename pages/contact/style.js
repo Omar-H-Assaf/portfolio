@@ -6,3 +6,7 @@ export const ContactInfoContainer = styled.div({
     fontSize: '1rem',
     padding: '1rem'
 });
+
+export default function Home1() {
+    return <>{/* nothing */}</>;
+}
