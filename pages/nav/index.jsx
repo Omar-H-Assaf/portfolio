@@ -4,7 +4,7 @@ import { useState } from "react";
 
 export default function NavBar() {
 
-    const [isScrolling, setIsScrolling] = useState(false)
+    const [isScrolling, setIsScrolling] = useState("false")
 
     const about = (id) => {
         if (typeof document !== 'undefined') {
@@ -20,9 +20,9 @@ export default function NavBar() {
         window.onscroll = function () {
             const top = window.scrollY;
             if(top > 100) {
-                setIsScrolling(true);
+                setIsScrolling("true");
             } else {
-                setIsScrolling(false);
+                setIsScrolling("false");
             }
         }
     }

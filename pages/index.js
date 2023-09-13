@@ -3,8 +3,10 @@ import NavBar from './nav';
 import MainPage from './main_page';
 
 export default function Home() {
+  //333333
   return (
     <div className={styles.container}>
+      <div>Hii</div>
      <NavBar />
      <MainPage />
       <style jsx>{`
