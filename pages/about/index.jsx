@@ -9,7 +9,7 @@ export default function About() {
                 About Me
             </NameLabel>
             <Aboutcontentcontainer>
-                <Image src="/omar.jpeg" width={350} height={350} style={{paddingRight: '3rem'}}/>
+                <Image alt="omar"  src="/omar.jpeg" width={350} height={350} style={{paddingRight: '3rem'}}/>
                 <ContentLabel style={{ color: '#333333' }}>
                     I am an accomplished Software Engineer with more than 3-year track record, primarily within the dynamic entertainment sector. My expertise lies in front-end development utilizing NextJS and React, as well as back-end proficiency with NodeJs and Python. In addition, I possess a strong command of database technologies including MySQL and MongoDB.
                     My journey in software engineering has instilled in me a deep commitment to continuous learning. I am inherently driven by a thirst for knowledge, maintaining an optimistic outlook even in challenging situations. My strong organizational skills contribute to a calm and composed demeanor that enhances my problem-solving capabilities.

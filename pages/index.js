@@ -6,7 +6,6 @@ export default function Home() {
   //333333
   return (
     <div className={styles.container}>
-      <div>Hii</div>
      <NavBar />
      <MainPage />
       <style jsx>{`
@@ -60,6 +59,7 @@ export default function Home() {
           margin: 0;
           scroll-behavior: smooth;
           background-color: #000;
+          width: fit-content;
           font-family:
             -apple-system,
             BlinkMacSystemFont,
