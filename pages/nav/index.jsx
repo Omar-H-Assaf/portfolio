@@ -1,9 +1,10 @@
 import Image from "next/image";
 import { Button, LogoContainer, Nav, NavLabel, NavLabelContainer } from "./style";
 import { useState } from "react";
+import { useRouter } from "next/router";
 
 export default function NavBar() {
-
+    const router = useRouter()
     const [isScrolling, setIsScrolling] = useState("false")
 
     const about = (id) => {
@@ -40,9 +41,9 @@ export default function NavBar() {
                     Experiance
                 </NavLabel>
                 <NavLabel onClick={() => about("work")}>
-                    Work
+                    Projects
                 </NavLabel>
-                <NavLabel onClick={() => about("contact")}>
+                <NavLabel onClick={() => router.push('mailto:omar.assaf97@icloud.com')}>
                     contact
                 </NavLabel>
                 <Button onClick={resumeDownload}>

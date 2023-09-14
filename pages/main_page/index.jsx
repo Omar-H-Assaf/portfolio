@@ -16,7 +16,7 @@ export default function MainPage() {
                             Software Engineer
                         </Title>
                         <Info>
-                            Based in Dallas, Texas with background in Front-End and Back-End Development.
+                            Based in Dallas, Texas with Web Development.
                             I connect the dots and provide throuhtful solutions by focusing on strategy. I also make sure those experiance are a little bit fun.
                         </Info>
                     </NameLabelHome>
@@ -31,6 +31,6 @@ export default function MainPage() {
             <About />
             <Experiance />
             <Work />
-            <Contact />
+            {/* <Contact /> */}
         </>)
 }

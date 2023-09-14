@@ -1,86 +1,96 @@
+import Image from "next/image";
+import { AboutBorder } from "../about/style";
 import { ContentLabel, NameLabel } from "../main_page/style";
-import { ExperianceContainer, Href, JobContainer, JobContent, JobTitle, ListContent } from "./style";
+import { Content, Date, ExperianceContainer, Href, ImageContainer, JobContainer, JobContent, JobTitle, ListContent, SocialContainer } from "./style";
+import Techno from "./techno";
 
 export default function Experiance() {
+
+    const ImageButton = (URL) => {
+        window.open(URL, '_blank');
+    }
+
     return (
         <ExperianceContainer id="experiance">
-            <NameLabel>
-                My Experiance
-            </NameLabel>
-            <div style={{paddingLeft: '2rem'}}>
-            <JobContainer>
-                <JobTitle>
-                    Software Engineer
-                </JobTitle>
-                &nbsp;
-                at &nbsp;
-                <Href target="_blank" href='https://optimumpartners.co/'>Optimum Partners</Href>
-                &nbsp;
-                2021-2023
-            </JobContainer>
-            <ContentLabel>
-                Outsourced for US-based <Href target="_blank" href='https://www.hearst.com/'>Hearst Media</Href> Monetization – Ad Product and Tech team.
-            </ContentLabel>
-            <JobContent>
-                <ListContent>
-                    Developed web applications using NextJS and React, leveraging powerful features to build responsive, interactive user interfaces with GraphQL on the server side.
-                </ListContent>
-                <ListContent>
-                    Integrated ad platforms, such as Google AdSense and custom ads, into web applications. Set up Google Analytics to track user behavior and measure key metrics for data-driven decision-making.
-                </ListContent>
-                <ListContent>
-                   Implemented responsive web applications that deliver seamless user experiences across devices and screen sizes.
-                </ListContent>
-                <ListContent>
-                    Familiar with setting up CI/CD pipelines using tools like GitHub Actions to automate the build, test, and deployment process.
-                </ListContent>
-                <ListContent>
-                    Integrated pipelines with version control systems and deployed applications seamlessly.
-                </ListContent>
-                <ListContent>
-                    Developed server-side applications, using the asynchronous, event-driven architecture of NodeJS to build scalable, high-performance web services and APIs. Applied frameworks like ExpressJS to streamline development and enhance code organization.
-                </ListContent>
-                <ListContent>
-                    Collaborated with international teams, demonstrating strong communication and adaptability skills to work across time zones and cultural differences in a diverse, distributed team environment.
-                </ListContent>
-            </JobContent>
-            <JobContainer style={{paddingTop: '4rem'}}>
-                <JobTitle>
-                    Full Stack Developer
-                </JobTitle>
-                &nbsp;
-                at &nbsp;
-                <Href target="_blank" href='https://www.dinffo.com/'>DINFFO</Href>
-                &nbsp;
-                2020-2021
-            </JobContainer>
-            <ContentLabel>
-                Created a web application that allows patients to book appointments with doctors in Jordan, and doctors to manage appointments, clinic, and staff.
-            </ContentLabel>
-            <JobContent>
-                <ListContent>
-                    Developed web applications using NextJS and React, leveraging powerful features to build responsive, interactive user interfaces with GraphQL on the server side.
-                </ListContent>
-                <ListContent>
-                    Integrated ad platforms, such as Google AdSense and custom ads, into web applications. Set up Google Analytics to track user behavior and measure key metrics for data-driven decision-making.
-                </ListContent>
-                <ListContent>
-                    Implemented responsive web applications that deliver seamless user experiences across devices and screen sizes.
-                </ListContent>
-                <ListContent>
-                    Familiar with setting up CI/CD pipelines using tools like GitHub Actions to automate the build, test, and deployment process.
-                </ListContent>
-                <ListContent>
-                    Integrated pipelines with version control systems and deployed applications seamlessly.
-                </ListContent>
-                <ListContent>
-                    Developed server-side applications, using the asynchronous, event-driven architecture of NodeJS to build scalable, high-performance web services and APIs. Applied frameworks like ExpressJS to streamline development and enhance code organization.
-                </ListContent>
-                <ListContent>
-                    Collaborated with international teams, demonstrating strong communication and adaptability skills to work across time zones and cultural differences in a diverse, distributed team environment.
-                </ListContent>
-            </JobContent>
-            </div>
+            <AboutBorder>
+                <NameLabel style={{ color: '#333333' }}>
+                    Experiances
+                </NameLabel>
+                    <JobContainer>
+                    <ImageContainer>
+                        <Image src={"/optimumpartner.jpeg"} width={50} height={50} style={{
+                            borderRadius: '10px', boxShadow: 'transparent 0 0 0 2px inset',
+                            overflow: 'hidden'
+                        }} />
+                        <div>
+                            <JobTitle>
+                                Software Engineer - Full-Time
+                            </JobTitle>
+                            <Href target="_blank" href='https://optimumpartners.co/'>Optimum Partners</Href>
+                        </div>
+
+                    </ImageContainer>
+                    <Date>
+                        jun 2021 - jun 2023
+                    </Date>
+                </JobContainer>
+                <Content>
+                        Outsourced for US-based Hearst Media Monetization – Ad Product and Tech team.
+                </Content>
+
+                <br />
+                <JobContainer>
+                    <ImageContainer>
+                        <Image src={"/DINFFO.webp"} width={50} height={50} style={{
+                            borderRadius: '10px', boxShadow: 'transparent 0 0 0 2px inset',
+                            overflow: 'hidden'
+                        }} />
+                        <div>
+                            <JobTitle>
+                                Full-Stack Developer - Full-Time
+                            </JobTitle>
+                            <Href target="_blank" href='https://optimumpartners.co/'>DINFFO</Href>
+                        </div>
+                    </ImageContainer>
+                    <Date>
+                        mar 2020 - jun 2021
+                    </Date>
+                </JobContainer>
+                <Content>
+                    Outsourced for US-based Hearst Media Monetization – Ad Product and Tech team.
+                </Content>
+                <Techno />
+
+                <NameLabel style={{ color: '#333333' }}>
+                    Social Netwrok
+                </NameLabel>
+                <SocialContainer>
+                    <Image src={"/linkedin.png"} width={70} height={70} style={{
+                        borderRadius: '10px', boxShadow: 'transparent 0 0 0 2px inset',
+                        overflow: 'hidden', cursor: 'pointer'
+                    }} onClick={() => ImageButton("https://www.linkedin.com/in/omar-assaf97")}/>
+                    <Image src={"/github.png"} width={70} height={70} style={{
+                        borderRadius: '10px', boxShadow: 'transparent 0 0 0 2px inset',
+                        overflow: 'hidden', cursor: 'pointer'
+                       
+                    }} onClick={() => ImageButton("https://github.com/Omar-H-Assaf")}/>
+                </SocialContainer>
+                <NameLabel style={{ color: '#333333' }}>
+                    Languages
+                </NameLabel>
+                <SocialContainer>
+                    <Image src={"/united-kingdom.png"} width={70} height={70} style={{
+                        borderRadius: '10px', boxShadow: 'transparent 0 0 0 2px inset',
+                        overflow: 'hidden'
+                    }} />
+                    <Image src={"/united-arab.png"} width={70} height={70} style={{
+                        borderRadius: '10px', boxShadow: 'transparent 0 0 0 2px inset',
+                        overflow: 'hidden'
+
+                    }} />
+                </SocialContainer>
+            </AboutBorder>
+
         </ExperianceContainer>
     )
 }

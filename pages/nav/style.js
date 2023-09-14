@@ -9,9 +9,10 @@ export const Nav = styled.nav({
     padding: '2rem',
     position: 'sticky',
     top: 0,
-    backgroundColor: (props) => props.scroll === "true"?'#1f59d8': 'transparent',
+    backgroundColor: (props) => props.scroll === "true" ?'#000': 'transparent',
     zIndex: 9999,
-    transition: 'all .2s'
+    transition: 'all .2s',
+    opacity: '0.7'
 
 });
 
@@ -24,7 +25,7 @@ export const NavLabelContainer = styled.div({
 export const NavLabel = styled.div({
     margin: '1rem',
     color: '#EBEBEB',
-    fontSize: '1.5rem',
+    fontSize: '1.2rem',
     cursor: 'pointer',
     '&:hover': {
         color: '#65d2a3'

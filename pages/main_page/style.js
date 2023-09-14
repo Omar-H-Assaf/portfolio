@@ -41,8 +41,9 @@ export const NameLabelHome = styled.div({
 export const NameLabel = styled.div({
     color: '#EBEBEB',
     fontFamily: 'Andale Mono, monospace',
-    fontSize: '3rem',
-    paddingBottom: '5rem',
+    fontSize: '1.5rem',
+    paddingBottom: '2rem',
+    fontWeight: 'bold'
 })
 
 export const ContentLabel = styled.div({

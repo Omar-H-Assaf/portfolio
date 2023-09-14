@@ -1,45 +1,50 @@
-import { useState } from "react";
+import Image from "next/image";
 import { AboutContainer } from "../about/style";
-import { NameLabel } from "../main_page/style";
-import { ViewImageButton, WorkBox, WorkContainer, WorkContent, WorkTitle } from "./style";
+import { IconContainer, ProjectConatiner, ProjectConatinerWidth, ProjectName, WorkContainer,} from "./style";
+import { useState } from "react";
 
 export default function Work() {
-    const [isShown, setIsShown] = useState(false);
-    const [isShown2, setIsShown2] = useState(false);
+    const [visible, setVisible] = useState(false);
+
+    const mouseEnter = (isEnter) => {
+        
+        setVisible(isEnter);
+    }
+    const [visible2, setVisible2] = useState(false);
+
+    const mouseEnter2 = (isEnter) => {
+
+        setVisible2(isEnter);
+    }
+    const [visible3, setVisible3] = useState(false);
+
+    const mouseEnter3 = (isEnter) => {
+
+        setVisible3(isEnter);
+    }
     return (
         <AboutContainer id="work">
-            <NameLabel style={{ color: '#333333' }}>
-                Work Sample
-            </NameLabel>
             <WorkContainer>
-                <WorkBox onMouseEnter={() => setIsShown(true)}
-                    onMouseLeave={() => setIsShown(false)}>
-                        {
-                        !isShown ? <WorkTitle>
-                            Formula One
-                        </WorkTitle> :
-                            <WorkContent>
-                                Created a MEAN stack application using NodeJS, MongoDB, and Angular.
-                                <ViewImageButton>
-                                    Show
-                                </ViewImageButton>
-                            </WorkContent>
-                        }
-                </WorkBox>
-                <WorkBox onMouseEnter={() => setIsShown2(true)}
-                    onMouseLeave={() => setIsShown2(false)}>
-                    {
-                        !isShown2 ? <WorkTitle>
-                            Real Estate
-                        </WorkTitle> :
-                            <WorkContent>
-                                Implemented a program to help real estate professionals and clients manage and access real estate information, by selling and buying and renting. Used Spring Boot, MySQL, and ReactJS.
-                                <ViewImageButton>
-                                    Show
-                                </ViewImageButton>
-                            </WorkContent>
-                    }
-                </WorkBox>
+                <ProjectConatinerWidth>
+                    <IconContainer onMouseEnter={()=> mouseEnter(true)} onMouseLeave={() => mouseEnter(false)}>
+                        {visible && <ProjectName>F1</ProjectName>}
+                        <Image src={"/up-right-arrow.png"} width={12} height={12} />
+                    </IconContainer>
+                </ProjectConatinerWidth>
+                <ProjectConatiner>
+                    <IconContainer onMouseEnter={() => mouseEnter2(true)} onMouseLeave={() => mouseEnter2(false)}>
+                        {visible2 && <ProjectName>Real State</ProjectName>}
+                        <Image src={"/up-right-arrow.png"} width={12} height={12} />
+                    </IconContainer>
+                </ProjectConatiner>
+
+                <ProjectConatiner>
+                    <IconContainer onMouseEnter={() => mouseEnter3(true)} onMouseLeave={() => mouseEnter3(false)}>
+                        {visible3 && <ProjectName>Chat</ProjectName>}
+                        <Image src={"/up-right-arrow.png"} width={12} height={12} />
+                    </IconContainer>
+                </ProjectConatiner>
+
             </WorkContainer>
         </AboutContainer>
     )
