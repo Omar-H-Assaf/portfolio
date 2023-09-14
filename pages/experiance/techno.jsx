@@ -65,8 +65,8 @@ export default function Techno() {
                     <p>Express JS</p>
                 </ToolContainer>
                 <ToolContainer>
-                    <Image src={"/github.png"} width={50} height={50} />
-                    <p>GitHub</p>
+                    <Image src={"/WCAG.png"} width={50} height={50} />
+                    <p>WCAG 2.1</p>
                 </ToolContainer>
             </Tool>
 

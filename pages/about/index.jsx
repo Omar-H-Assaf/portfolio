@@ -10,7 +10,7 @@ export default function About() {
                     About Me
                 </NameLabel> */}
                 <Aboutcontentcontainer>
-                    <Image alt="omar" src="/omar-icon.png" width={300} height={250} style={{ paddingRight: '3rem' }} />
+                    <Image src="/omar-icon.png" width={300} height={250} style={{ paddingRight: '3rem' }} />
                     <ContentLabel style={{ color: '#333333' }}>
                         I am an accomplished Software Engineer with more than 3-year track record, primarily within the dynamic entertainment sector. My expertise lies in front-end development utilizing NextJS and React, as well as back-end proficiency with NodeJs and Python. In addition, I possess a strong command of database technologies including MySQL and MongoDB.
                     </ContentLabel>
