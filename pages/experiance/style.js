@@ -49,6 +49,11 @@ export const ExperianceContainer = styled.div({
     paddingLeft: '10rem',
     paddingRight: '10rem',
     backgroundColor: '#F1FBF7',
+    '@media (max-width: 768px)': {
+        paddingLeft: '3rem',
+        paddingRight: '3rem',
+    }
+
 });
 
 export const ListContent = styled.li({

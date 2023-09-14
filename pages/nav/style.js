@@ -12,7 +12,10 @@ export const Nav = styled.nav({
     backgroundColor: (props) => props.scroll === "true" ?'#000': 'transparent',
     zIndex: 9999,
     transition: 'all .2s',
-    opacity: '0.7'
+    opacity: '0.7',
+    '@media (max-width: 768px)': {
+        height: '6rem',
+    }
 
 });
 
@@ -28,8 +31,12 @@ export const NavLabel = styled.div({
     fontSize: '1.2rem',
     cursor: 'pointer',
     '&:hover': {
-        color: '#65d2a3'
+        color: '#65d2a3',
+    },
+    '@media (max-width: 768px)': {
+        fontSize: '2.2rem',
     }
+    
 })
 
 export const LogoContainer = styled.div({
@@ -49,6 +56,11 @@ export const Button = styled.div({
     '&:hover': {
         color: '#65d2a3',
         borderColor: '#65d2a3',
+    },
+    '@media (max-width: 768px)': {
+        fontSize: '2rem',
+        height: '4rem',
+        width: '8rem',
     }
 })
 

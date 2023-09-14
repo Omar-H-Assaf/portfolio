@@ -12,12 +12,19 @@ export const AboutContainer = styled.div({
     paddingRight: '10rem',
     zIndex: 100,
     position: 'relative',
+    '@media (max-width: 768px)': {
+        paddingLeft: '3rem',
+        paddingRight: '3rem',
+    }
 });
 
 export const Aboutcontentcontainer = styled.div({
     display: 'flex',
     justifyContent: 'space-between',
-    alignItems: 'center'
+    alignItems: 'center',
+    '@media (max-width: 768px)': {
+       flexDirection: 'column'
+    }
 
 })
 export default function Home1() {
