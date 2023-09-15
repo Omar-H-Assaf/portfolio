@@ -1,75 +1,83 @@
 import Image from "next/image";
 import { NameLabel } from "../main_page/style";
-import { Tool, ToolContainer } from "./style";
+import { CompanyImage, TechnoImage, TechnoText, Tool, ToolContainer } from "./style";
 
 export default function Techno() {
+    const arr = [
+        {
+            name: "React.JS",
+            src: "/physics.png"
+        },
+        {
+            name: "Node.JS",
+            src: "/nodejs.svg"
+        },
+        {
+            name: "Next.JS",
+            src: "/nextjs.svg"
+        },
+        {
+            name: "GraphQL",
+            src: "/graphql.svg"
+        },
+        {
+            name: "JavaScript",
+            src: "/java-script.png"
+        },
+        {
+            name: "TypeScript",
+            src: "/typescript.png"
+        },
+        {
+            name: "Jira",
+            src: "/jira.svg"
+        },
+        {
+            name: "Python",
+            src: "/python.png"
+        },
+        {
+            name: "VS Code",
+            src: "/vs-code.svg"
+        },
+        {
+            name: "MongoDB",
+            src: "/mongodb.png"
+        },
+        {
+            name: "MySQL",
+            src: "/mysql.png"
+        },
+        {
+            name: "Dart",
+            src: "/dart.svg"
+        },
+        {
+            name: "Express.JS",
+            src: "/express-js.svg"
+        },
+        {
+            name: "WCAG 2.1",
+            src: "/WCAG.png"
+        }
+    ];
 
     return (
         <>
             <NameLabel style={{ color: '#333333' }}>
                 Tools
             </NameLabel>
-            <Tool>
-                <ToolContainer>
-                    <Image src={"/physics.png"} width={50} height={50}/>
-                    <p>React.JS</p>
-                </ToolContainer>
-                <ToolContainer>
-                    <Image src={"/nodejs.svg"} width={50} height={50} />
-                    <p>Node.JS</p>
-                </ToolContainer>
-                <ToolContainer>
-                    <Image src={"/nextjs.svg"} width={50} height={50} />
-                    <p>Next.JS</p>
-                </ToolContainer>
-                <ToolContainer>
-                    <Image src={"/graphql.svg"} width={50} height={50} />
-                    <p>GraphQl</p>
-                </ToolContainer>
-                <ToolContainer>
-                    <Image src={"/java-script.png"} width={50} height={50} />
-                    <p>JavaScript</p>
-                </ToolContainer>
-                <ToolContainer>
-                    <Image src={"/typescript.png"} width={50} height={50} />
-                    <p>TypeScript</p>
-                </ToolContainer>
-                <ToolContainer>
-                    <Image src={"/jira.svg"} width={50} height={50} />
-                    <p>Jira</p>
-                </ToolContainer>
-            </Tool>
-            <Tool>
-                <ToolContainer>
-                    <Image src={"/python.png"} width={50} height={50} />
-                    <p>Python</p>
-                </ToolContainer>
-                <ToolContainer>
-                    <Image src={"/vs-code.svg"} width={50} height={50} />
-                    <p>VSCode</p>
-                </ToolContainer>
-                <ToolContainer>
-                    <Image src={"/mongodb.png"} width={50} height={50} />
-                    <p>MongoDB</p>
-                </ToolContainer>
-                <ToolContainer>
-                    <Image src={"/mysql.png"} width={50} height={50} />
-                    <p>MySQL</p>
-                </ToolContainer>
-                <ToolContainer>
-                    <Image src={"/dart.svg"} width={50} height={50} />
-                    <p>Dart</p>
-                </ToolContainer>
-                <ToolContainer>
-                    <Image src={"/express-js.svg"} width={50} height={50} />
-                    <p>Express JS</p>
-                </ToolContainer>
-                <ToolContainer>
-                    <Image src={"/WCAG.png"} width={50} height={50} />
-                    <p>WCAG 2.1</p>
-                </ToolContainer>
-            </Tool>
+            <Tool className="row">
+                {arr.map((elm, index) => {
+                    return (
+                        <ToolContainer className="col-md-4 col-sm-6" key={index}>
+                            <TechnoImage src={elm.src} />
+                            <TechnoText>{elm.name}</TechnoText>
+                        </ToolContainer>
+                    )
+                })}
 
+            </Tool>
         </>
     )
 

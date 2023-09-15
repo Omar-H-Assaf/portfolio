@@ -8,8 +8,6 @@ export const AboutContainer = styled.div({
     animation: 'wipe-enter 1s infinite',
     backgroundColor: '#F1FBF7',
     padding: '4rem',
-    paddingLeft: '10rem',
-    paddingRight: '10rem',
     zIndex: 100,
     position: 'relative',
     '@media (max-width: 768px)': {
@@ -23,7 +21,7 @@ export const Aboutcontentcontainer = styled.div({
     justifyContent: 'space-between',
     alignItems: 'center',
     '@media (max-width: 768px)': {
-       flexDirection: 'column'
+        flexDirection: 'column'
     }
 
 })
@@ -34,8 +32,16 @@ export default function Home1() {
 export const AboutBorder = styled.div({
     backgroundColor: 'white',
     boxShadow: 'transparent 0 0 0 2px inset',
-overflow: 'hidden',
-borderRadius: '32px',
-width: '100%%',
-padding: '2rem'
+    overflow: 'hidden',
+    borderRadius: '32px',
+    width: '100%%',
+    padding: '2rem',
+    '@media (max-width: 768px)': {
+        paddingLeft: '3rem',
+        paddingRight: '3rem',
+        display: 'flex',
+        justifyContent: 'center',
+        flexDirection: 'column',
+        alignItems: 'center'
+    }
 })

@@ -2,6 +2,7 @@ import Image from "next/image";
 import { AboutContainer } from "../about/style";
 import { IconContainer, ProjectConatiner, ProjectConatinerWidth, ProjectName, WorkContainer,} from "./style";
 import { useState } from "react";
+import Link from "next/link";
 
 export default function Work() {
     const [visible, setVisible] = useState(false);
@@ -22,6 +23,9 @@ export default function Work() {
 
         setVisible3(isEnter);
     }
+
+    
+
     return (
         <AboutContainer id="work">
             <WorkContainer>
@@ -39,10 +43,12 @@ export default function Work() {
                 </ProjectConatiner>
 
                 <ProjectConatiner>
-                    <IconContainer onMouseEnter={() => mouseEnter3(true)} onMouseLeave={() => mouseEnter3(false)}>
-                        {visible3 && <ProjectName>Chat</ProjectName>}
-                        <Image src={"/up-right-arrow.png"} width={12} height={12} />
-                    </IconContainer>
+                    <Link href={'/projects/f1'}>
+                        <IconContainer onMouseEnter={() => mouseEnter3(true)} onMouseLeave={() => mouseEnter3(false)}>
+                            {visible3 && <ProjectName>Chat</ProjectName>}
+                            <Image src={"/up-right-arrow.png"} width={12} height={12} />
+                        </IconContainer>
+                    </Link>
                 </ProjectConatiner>
 
             </WorkContainer>

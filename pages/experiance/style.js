@@ -12,6 +12,9 @@ export const Href = styled.a({
     paddingLeft: '1rem',
     '&:hover': {
         color: '#65d2a3',
+    },
+    '@media (max-width: 768px)': {
+        fontSize: '2.5rem',
     }
 });
 
@@ -22,7 +25,10 @@ export const JobContainer = styled.div({
     cursor: 'default',
     display: 'flex',
     alignItems: 'center',
-    justifyContent: 'space-between'
+    justifyContent: 'space-between',
+    '@media (max-width: 768px)': {
+        display: 'block'
+    }
 
 });
 
@@ -35,8 +41,10 @@ export const JobContent = styled.ul({
 
 export const JobTitle = styled.div({
     fontSize: '1.3rem',
-    paddingLeft: '1rem'
-
+    paddingLeft: '1rem',
+    '@media (max-width: 768px)': {
+        fontSize: '2rem',
+    }
 });
 
 export const ExperianceContainer = styled.div({
@@ -45,9 +53,7 @@ export const ExperianceContainer = styled.div({
     width: "100%",
     paddingTop: '5rem',
     animation: 'wipe-enter 1s infinite',
-    padding: '0rem',
-    paddingLeft: '10rem',
-    paddingRight: '10rem',
+    padding: '4rem',
     backgroundColor: '#F1FBF7',
     '@media (max-width: 768px)': {
         paddingLeft: '3rem',
@@ -61,18 +67,32 @@ export const ListContent = styled.li({
 });
 
 export const ImageContainer = styled.div({
-    display: 'flex'
+    display: 'flex',
+    '@media (max-width: 768px)': {
+        flexDirection: 'column',
+        justifyContent: 'center',
+        alignItems: 'center'
+    }
 });
 
 export const Date = styled.div({
     color: '#333333',
     fontSize: '0.9rem',
+    '@media (max-width: 768px)': {
+        fontSize: '1.5rem',
+        margin: 'auto',
+        width: '50%'
+    }
 });
 
 export const Content = styled.p({
     color: '#333333',
     fontSize: '0.9rem',
     paddingBottom: '2rem',
+    '@media (max-width: 768px)': {
+        marginTop: '2rem',
+        fontSize: '1.6rem',
+    }
 });
 
 export const SocialContainer = styled.div({
@@ -91,10 +111,53 @@ export const ToolContainer = styled.div({
     justifyContent: 'center',
     padding: '1rem',
     flexDirection: 'column',
-    alignItems: 'center'
+    alignItems: 'center',
+    marginLeft: '3rem',
+    '@media (max-width: 768px)': {
+        height: '18rem',
+        width: '18rem',
+    }
 });
 
+export const CompanyImage = styled.img({
+    borderRadius: '10px', boxShadow: 'transparent 0 0 0 2px inset',
+    overflow: 'hidden',
+    height: '3.125rem',
+    width: '3.125rem',
+    '@media (max-width: 768px)': {
+        height: '10.125rem',
+        width: '10.125rem',
+        marginBottom: '4rem',
+        marginTop: '4rem'
+    }
+})
+
+export const TechnoImage = styled.img({
+    height: '3.125rem',
+    width: '3.125rem',
+    '@media (max-width: 768px)': {
+        height: '7.125rem',
+        width: '7.125rem',
+        marginBottom: '2rem'
+    }
+});
+
+export const TechnoText = styled.p({
+    '@media (max-width: 768px)': {
+        fontSize: '3rem'
+    }
+})
+
+export const JobDescription = styled.div({
+    '@media (max-width: 768px)': {
+        display: 'flex',
+        flexDirection: 'column',
+        justifyContent: 'center',
+        alignItems: 'center'
+    }
+})
+
 export const Tool = styled.div({
-    display: 'flex',
-    justifyContent: 'space-between',
+    // display: 'flex',
+    // justifyContent: 'space-between',
 });

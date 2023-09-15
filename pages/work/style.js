@@ -5,26 +5,32 @@ export const WorkContainer = styled.div({
     display: "flex",
     width: "100%",
     justifyContent: 'space-between',
+    backgroundColor: 'white',
+    boxShadow: 'transparent 0 0 0 2px inset',
+    overflow: 'hidden',
+    borderRadius: '32px',
+    width: '100%%',
+    padding: '2rem'
 });
 
 export const ProjectConatinerWidth = styled.div({
     height: '17.5rem',
-    width: '33rem',
+    width: '45%',
     boxShadow: 'transparent 0 0 0 2px inset',
     overflow: 'hidden',
     borderRadius: '32px',
     backgroundColor: '#65d2a3',
-    position: 'relative'
+    position: 'relative',
 });
 
 export const ProjectConatiner = styled.div({
-    width: '17.5rem',
+    width: '25%',
     height: '36rem',
     boxShadow: 'transparent 0 0 0 2px inset',
     overflow: 'hidden',
     borderRadius: '32px',
     backgroundColor: '#65d2a3',
-    position: 'relative'
+    position: 'relative',
 
 });
 
@@ -53,6 +59,7 @@ export const ProjectName = styled.p({
     paddingLeft: '1rem',
     transform: 'translateX(-12px) translateZ(0px)',
 })
+
 
 export default function Home1() {
     return <>{/* nothing */}</>;
