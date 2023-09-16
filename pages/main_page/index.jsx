@@ -7,11 +7,11 @@ import circle from "../../public/circle.jpg";
 
 export default function MainPage() {
     return (
-    <>
-    <MainPageContainer id="home">
-        <IntroContainer>
+        <>
+            <MainPageContainer id="home">
+                <IntroContainer>
                     <NameLabelHome>
-                Hi, I'm Omar Assaf
+                        Hi, I'm Omar Assaf
                         <Title>
                             Software Engineer
                         </Title>
@@ -25,9 +25,9 @@ export default function MainPage() {
                         <Image src={circle.src} />
 
                     </ImageConatiner>
-        </IntroContainer>
+                </IntroContainer>
 
-    </MainPageContainer>
+            </MainPageContainer>
             <About />
             <Experiance />
             <Work />

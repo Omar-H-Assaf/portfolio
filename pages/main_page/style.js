@@ -8,7 +8,7 @@ export const MainPageContainer = styled.div({
     '@media (max-width: 768px)': {
         paddingLeft: '3rem',
         paddingRight: '3rem',
-        height: '110vh'
+        height: '120vh'
     }
 });
 
@@ -49,6 +49,7 @@ export const NameLabelHome = styled.div({
     paddingBottom: '5rem',
     position: 'absolute',
     zIndex: 90,
+    height: '100%',
     '@media (max-width: 768px)': {
         width: "100vh",
         fontSize: '4.5rem',

@@ -10,17 +10,42 @@ export const WorkContainer = styled.div({
     overflow: 'hidden',
     borderRadius: '32px',
     width: '100%%',
-    padding: '2rem'
+    padding: '2rem',
+    '@media (max-width: 768px)': {
+        flexDirection: 'column',
+        justifyContent: 'center',
+        alignItems: 'center'
+    }
+});
+
+export const SomeProjectconatiner = styled.div({
+    display: 'flex',
+    justifyContent: 'center',
+    alignItems: 'center',
+    flexDirection: 'column'
 });
 
 export const ProjectConatinerWidth = styled.div({
     height: '17.5rem',
-    width: '45%',
+    width: '17.5rem',
     boxShadow: 'transparent 0 0 0 2px inset',
     overflow: 'hidden',
+    backgroundColor: (props) => props.color,
     borderRadius: '32px',
-    backgroundColor: '#65d2a3',
     position: 'relative',
+    display: 'flex',
+    justifyContent: 'center',
+    alignItems: 'center',
+    '@media (max-width: 768px)': {
+        width: '100%',
+        height: '36rem ',
+        marginBottom: '2rem'
+    }
+});
+
+export const ImageWidth = styled.img({
+    width: '50%',
+    height: '50%',
 });
 
 export const ProjectConatiner = styled.div({
@@ -31,7 +56,11 @@ export const ProjectConatiner = styled.div({
     borderRadius: '32px',
     backgroundColor: '#65d2a3',
     position: 'relative',
-
+    '@media (max-width: 768px)': {
+        width: '100%',
+        height: '36rem ',
+        marginBottom: '2rem'
+    }
 });
 
 export const IconContainer = styled.div({
