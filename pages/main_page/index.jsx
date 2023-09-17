@@ -1,16 +1,15 @@
-import { MainPageContainer, IntroContainer, Image, ImageConatiner, NameLabelHome, Title, Info } from "./style";
 import About from "../about";
 import Experiance from "../experiance";
 import Work from "../work";
-import Contact from "../contact";
 import circle from "../../public/circle.jpg";
+import { Image, ImageConatiner, Info, IntroContainer, MainPageContainer, NameLabelHome, Title } from "./style";
 
 export default function MainPage() {
     return (
         <>
-            <MainPageContainer id="home">
-                <IntroContainer>
-                    <NameLabelHome>
+        <MainPageContainer>
+            <IntroContainer>
+                <NameLabelHome>
                         Hi, I'm Omar Assaf
                         <Title>
                             Software Engineer
@@ -19,15 +18,13 @@ export default function MainPage() {
                             Based in Dallas, Texas with Web Development.
                             I connect the dots and provide throuhtful solutions by focusing on strategy. I also make sure those experiance are a little bit fun.
                         </Info>
-                    </NameLabelHome>
-
+                </NameLabelHome>
                     <ImageConatiner>
                         <Image src={circle.src} />
 
                     </ImageConatiner>
-                </IntroContainer>
-
-            </MainPageContainer>
+            </IntroContainer>
+        </MainPageContainer>
             <About />
             <Experiance />
             <Work />

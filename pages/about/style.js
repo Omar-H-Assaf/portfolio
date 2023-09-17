@@ -23,7 +23,6 @@ export const Aboutcontentcontainer = styled.div({
     '@media (max-width: 768px)': {
         flexDirection: 'column'
     }
-
 })
 export default function Home1() {
     return <>{/* nothing */}</>;
@@ -43,5 +42,15 @@ export const AboutBorder = styled.div({
         justifyContent: 'center',
         flexDirection: 'column',
         alignItems: 'center'
+    }
+});
+
+export const AboutImage = styled.img({
+    width: '18.75rem',
+    height: '16.188rem',
+    paddingRight: '3rem',
+    '@media (max-width: 768px)': {
+        width: '40.75rem',
+        height: '40.75rem',
     }
 })

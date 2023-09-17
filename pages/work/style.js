@@ -68,17 +68,14 @@ export const IconContainer = styled.div({
     alignItems: 'center',
     justifyContent: 'space-around',
     backgroundColor: '#F1FBF7',
-    height: '2.5rem',
-    width: '2.5rem',
+    height: '15%',
+    width: '15%',
     position: 'absolute',
     bottom: 25,
     left: 25,
-    borderRadius: '50px',
+    borderRadius: '18px',
     cursor: 'pointer',
     transition: 'width 0.4s ease-in-out',
-    '&:hover': {
-        width: '7rem',
-    }
 });
 
 export const ProjectName = styled.p({
@@ -89,7 +86,14 @@ export const ProjectName = styled.p({
     transform: 'translateX(-12px) translateZ(0px)',
 })
 
-
+export const ArrowImage = styled.img({
+    width: '50%',
+    height: '50%',
+    '@media (max-width: 768px)': {
+        width: '35%',
+        height: '35% ',
+    }
+})
 export default function Home1() {
     return <>{/* nothing */}</>;
 };

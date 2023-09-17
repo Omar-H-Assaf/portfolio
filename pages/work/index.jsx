@@ -1,37 +1,19 @@
 import Image from "next/image";
 import { AboutContainer } from "../about/style";
-import { IconContainer, ImageWidth, ProjectConatiner, ProjectConatinerWidth, ProjectName, SomeProjectconatiner, WorkContainer,} from "./style";
+import { ArrowImage, IconContainer, ImageWidth, ProjectConatiner, ProjectConatinerWidth, ProjectName, SomeProjectconatiner, WorkContainer, } from "./style";
 import { useState } from "react";
 import F1Logo from "../../public/f1/f1_logo.svg"
 import RealEstate from "../../public/real-estate/icons8-real-estate-100.png"
 import ChatIcon from "../../public/chat/chat-4-512.png"
 import { ContentLabel } from "../main_page/style";
+import Link from "next/link";
 
 export default function Work() {
-    const [visible, setVisible] = useState(false);
-
-    const mouseEnter = (isEnter) => {
-        
-        setVisible(isEnter);
-    }
-    const [visible2, setVisible2] = useState(false);
-
-    const mouseEnter2 = (isEnter) => {
-
-        setVisible2(isEnter);
-    }
-    const [visible3, setVisible3] = useState(false);
-
-    const mouseEnter3 = (isEnter) => {
-
-        setVisible3(isEnter);
-    }
-
     const arr = [{
         name: 'F1',
         color: '#15151e'
     }]
-    
+
 
     return (
         <AboutContainer id="work">
@@ -43,45 +25,27 @@ export default function Work() {
                             This is a collection of some projects.
                         </ContentLabel>
                     </SomeProjectconatiner>
-
                 </ProjectConatinerWidth>
                 <ProjectConatinerWidth color="#e10600">
                     <ImageWidth src={F1Logo.src} />
-                    <IconContainer onMouseEnter={()=> mouseEnter(true)} onMouseLeave={() => mouseEnter(false)}>
-                        {visible && <ProjectName>F1</ProjectName>}
-                        <Image src={"/up-right-arrow.png"} width={12} height={12} />
-                    </IconContainer>
+                    <Link href={'/projects/f1'}>
+                        <IconContainer >
+                            <ArrowImage src={"/up-right-arrow.png"} />
+                        </IconContainer>
+                    </Link>
                 </ProjectConatinerWidth>
                 <ProjectConatinerWidth color="#15151e">
                     <ImageWidth src={RealEstate.src} />
-                    <IconContainer onMouseEnter={() => mouseEnter(true)} onMouseLeave={() => mouseEnter(false)}>
-                        {visible && <ProjectName>Real Estate</ProjectName>}
-                        <Image src={"/up-right-arrow.png"} width={12} height={12} />
+                    <IconContainer>
+                        <ArrowImage src={"/up-right-arrow.png"} />
                     </IconContainer>
                 </ProjectConatinerWidth>
                 <ProjectConatinerWidth color="#21301C">
-                    <ImageWidth src={ChatIcon.src}/>
-                    <IconContainer onMouseEnter={() => mouseEnter(true)} onMouseLeave={() => mouseEnter(false)}>
-                        {visible && <ProjectName>F1</ProjectName>}
-                        <Image src={"/up-right-arrow.png"} width={12} height={12} />
+                    <ImageWidth src={ChatIcon.src} />
+                    <IconContainer>
+                        <ArrowImage src={"/up-right-arrow.png"} />
                     </IconContainer>
                 </ProjectConatinerWidth>
-                {/* <ProjectConatiner>
-                    <IconContainer onMouseEnter={() => mouseEnter2(true)} onMouseLeave={() => mouseEnter2(false)}>
-                        {visible2 && <ProjectName>Real State</ProjectName>}
-                        <Image src={"/up-right-arrow.png"} width={12} height={12} />
-                    </IconContainer>
-                </ProjectConatiner>
-
-                <ProjectConatiner>
-                    <Link href={'/projects/f1'}>
-                        <IconContainer onMouseEnter={() => mouseEnter3(true)} onMouseLeave={() => mouseEnter3(false)}>
-                            {visible3 && <ProjectName>Chat</ProjectName>}
-                            <Image src={"/up-right-arrow.png"} width={12} height={12} />
-                        </IconContainer>
-                    </Link>
-                </ProjectConatiner> */}
-
             </WorkContainer>
         </AboutContainer>
     )

@@ -1,7 +1,12 @@
 import { useEffect } from "react";
-import { BigContainer, BottomContainer, Columncontainer, ContentContainer, Description, Description2, DescriptionContainer, Exit, ExitButton, HeadLineContainer, Header, MediumContainer, PopUpContainer, Rowcontainer, SmallContainer } from "./style";
+import { BigContainer, BottomContainer, Columncontainer, ContentContainer, Description, Description2, DescriptionContainer, ExitButton, HeadLineContainer, Header, ImageFit, MediumContainer, PopUpContainer, Rowcontainer, SmallContainer } from "./style";
 import Image from "next/image";
 import Link from "next/link";
+import HomePageF1 from "../../../public/f1/home.png"
+import Driver from "../../../public/f1/driver.png"
+import Team from "../../../public/f1/team.png"
+import Teams from "../../../public/f1/teams.png"
+
 
 export default function PopUp() {
     useEffect(() => {
@@ -30,20 +35,20 @@ export default function PopUp() {
         </ContentContainer>
         <BottomContainer>
             <BigContainer>
-
+                <ImageFit src={Team.src} />
             </BigContainer>
             <Columncontainer>
             <Rowcontainer>
                     <SmallContainer>
-
+                        <ImageFit src={Driver.src} />
                     </SmallContainer>
                     <SmallContainer>
-
+                        <ImageFit src={Teams.src} />
                     </SmallContainer>
             </Rowcontainer>
 
                 <MediumContainer>
-
+                    <ImageFit src={HomePageF1.src} />
                 </MediumContainer>
             </Columncontainer>
  

@@ -40,7 +40,7 @@ export const IntroContainer = styled.div({
         width: "100%",
         fontSize: '4rem',
     }
-})
+});
 
 export const NameLabelHome = styled.div({
     color: '#EBEBEB',
@@ -54,7 +54,7 @@ export const NameLabelHome = styled.div({
         width: "100vh",
         fontSize: '4.5rem',
     }
-})
+});
 
 export const NameLabel = styled.div({
     color: '#EBEBEB',
