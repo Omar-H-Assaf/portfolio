@@ -17,6 +17,7 @@ export default function Experiance() {
             jobtitle: 'Software Engineer - Full-Time',
             href: 'https://optimumpartners.co/',
             date: 'Jun 2021 - Jun 2023',
+            name: 'Optimum Partners',
             content: 'Outsourced for US-based Hearst Media Monetization – Ad Product and Tech team.'
         },
         {
@@ -24,6 +25,7 @@ export default function Experiance() {
             jobtitle: 'Full-Stack Developer - Full-Time',
             href: 'https://www.dinffo.com/',
             date: 'Mar 2020 - Jun 2021',
+            name: 'DINFFO',
             content: 'Outsourced for US-based Hearst Media Monetization – Ad Product and Tech team.'
         },
 
@@ -45,7 +47,7 @@ export default function Experiance() {
                                         <JobTitle>
                                             {elm.jobtitle}
                                         </JobTitle>
-                                        <Href target="_blank" href={elm.href}>Optimum Partners</Href>
+                                        <Href target="_blank" href={elm.href}>{elm.name}</Href>
                                     </JobDescription>
 
                                 </ImageContainer>

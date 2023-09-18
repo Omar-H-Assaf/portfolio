@@ -36,15 +36,19 @@ export default function Work() {
                 </ProjectConatinerWidth>
                 <ProjectConatinerWidth color="#15151e">
                     <ImageWidth src={RealEstate.src} />
-                    <IconContainer>
-                        <ArrowImage src={"/up-right-arrow.png"} />
-                    </IconContainer>
+                    <Link href={'/projects/property-management'}>
+                        <IconContainer>
+                            <ArrowImage src={"/up-right-arrow.png"} />
+                        </IconContainer>
+                    </Link>
                 </ProjectConatinerWidth>
                 <ProjectConatinerWidth color="#21301C">
                     <ImageWidth src={ChatIcon.src} />
-                    <IconContainer>
-                        <ArrowImage src={"/up-right-arrow.png"} />
-                    </IconContainer>
+                    <Link href={'/projects/chat'}>
+                        <IconContainer>
+                            <ArrowImage src={"/up-right-arrow.png"} />
+                        </IconContainer>
+                    </Link>
                 </ProjectConatinerWidth>
             </WorkContainer>
         </AboutContainer>

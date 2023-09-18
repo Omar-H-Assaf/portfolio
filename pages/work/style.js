@@ -87,12 +87,8 @@ export const ProjectName = styled.p({
 })
 
 export const ArrowImage = styled.img({
-    width: '50%',
-    height: '50%',
-    '@media (max-width: 768px)': {
-        width: '35%',
-        height: '35% ',
-    }
+    width: '35%',
+    height: '35%',
 })
 export default function Home1() {
     return <>{/* nothing */}</>;
