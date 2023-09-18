@@ -12,7 +12,7 @@ import { Href } from "../../experiance/style";
 export default function PopUp() {
     useEffect(() => {
         document.body.style.backgroundColor = "rgb(9, 12, 16)";
-    }, [])
+    }, []);
     return (<PopUpContainer>
         <Link href={'/'}>
             <ExitButton>

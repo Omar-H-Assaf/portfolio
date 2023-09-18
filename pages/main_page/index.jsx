@@ -3,8 +3,13 @@ import Experiance from "../experiance";
 import Work from "../work";
 import circle from "../../public/circle.jpg";
 import { Image, ImageConatiner, Info, IntroContainer, MainPageContainer, NameLabelHome, Title } from "./style";
+import { useEffect } from "react";
 
 export default function MainPage() {
+    useEffect(() => {
+        document.body.style.backgroundColor = "#000";
+    }, []);
+
     return (
         <>
             <MainPageContainer>
