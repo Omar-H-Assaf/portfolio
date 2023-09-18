@@ -36,6 +36,7 @@ export const IntroContainer = styled.div({
     width: "80%",
     position: 'absolute',
     height: '100%',
+    cursor: 'default',
     '@media (max-width: 768px)': {
         width: "100%",
         fontSize: '4rem',
@@ -62,6 +63,7 @@ export const NameLabel = styled.div({
     fontSize: '1.5rem',
     paddingBottom: '2rem',
     fontWeight: 'bold',
+    cursor: 'default',
     '@media (max-width: 768px)': {
         fontSize: '4.5rem',
     }
@@ -72,6 +74,7 @@ export const ContentLabel = styled.div({
     fontFamily: 'Courier, monospace',
     fontSize: '1rem',
     lineHeight: '2rem',
+    cursor: 'default',
     '@media (max-width: 768px)': {
         fontSize: '3rem',
         paddingTop: '4rem',

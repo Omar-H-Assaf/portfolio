@@ -31,7 +31,7 @@ export default function NavBar() {
     return (
         <Nav scroll={isScrolling}>
             <LogoContainer>
-                <Image alt="logo" src="/oa-white.png" width={40} height={40} style={{cursor: "pointer"}}/>
+                <Image alt="logo" src="/oa-white.png" width={40} height={40}/>
             </LogoContainer>
             <NavLabelContainer>
                 <NavLabel onClick={() => about("about")}>

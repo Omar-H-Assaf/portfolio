@@ -90,6 +90,7 @@ export const Content = styled.p({
     fontSize: '0.9rem',
     paddingBottom: '2rem',
     marginTop: '2rem',
+    cursor: 'default',
     '@media (max-width: 768px)': {
        
         fontSize: '1.9rem',

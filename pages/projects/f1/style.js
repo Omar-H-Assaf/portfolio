@@ -35,6 +35,7 @@ export const ContentContainer = styled.div({
     marginLeft: '8rem',
     marginRight: '8rem',
     marginTop: '8rem',
+    cursor: 'default',
     flexDirection: 'column',
     '@media (max-width: 768px)': {
         flexDirection: 'column',
@@ -59,6 +60,7 @@ export const Header = styled.h2({
     fontWeight: '400',
     color: 'rgb(240, 242, 248)',
     marginBottom: '8px',
+    cursor: 'default',
     '@media (max-width: 768px)': {
         fontSize: '3rem',
     }
