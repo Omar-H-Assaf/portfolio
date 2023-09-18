@@ -15,7 +15,7 @@ export default function PopUp() {
     return (<PopUpContainer>
         <Link href={'/'}>
             <ExitButton>
-                <Image src={"/close-button.png"} width={20} height={20}/>
+                <Image src={"/close-button.png"} width={20} height={20} />
             </ExitButton>
         </Link>
         <ContentContainer>
@@ -24,13 +24,11 @@ export default function PopUp() {
             </Header>
             <HeadLineContainer>
                 <Description>
-                    Created a MEAN stack application using NodeJS, MongoDB, and Angular
+                    Formula One is the highest class of international racing for open-wheel single-seater formula racing cars sanctioned by the Fédération Internationale de l'Automobile.
                 </Description>
-                <DescriptionContainer>
-                    <Description2>
-                        Created a MEAN stack application using NodeJS, MongoDB, and Angular
-                    </Description2>
-                </DescriptionContainer>
+                <Description2>
+                    Creating an F1 (Formula 1) application using the MERN stack is an exciting project that combines cutting-edge web development technologies with the thrill of Formula 1 racing. The MERN stack, which stands for MongoDB, Express.js, React, and Node.js, is a popular choice for building modern web applications due to its flexibility and scalability.
+                </Description2>
             </HeadLineContainer>
         </ContentContainer>
         <BottomContainer>
@@ -38,20 +36,20 @@ export default function PopUp() {
                 <ImageFit src={Team.src} />
             </BigContainer>
             <Columncontainer>
-            <Rowcontainer>
+                <Rowcontainer>
                     <SmallContainer>
                         <ImageFit src={Driver.src} />
                     </SmallContainer>
                     <SmallContainer>
                         <ImageFit src={Teams.src} />
                     </SmallContainer>
-            </Rowcontainer>
+                </Rowcontainer>
 
                 <MediumContainer>
                     <ImageFit src={HomePageF1.src} />
                 </MediumContainer>
             </Columncontainer>
- 
+
         </BottomContainer>
     </PopUpContainer>)
 }

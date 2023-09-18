@@ -67,8 +67,8 @@ export default function Experiance() {
                     Social Netwrok
                 </NameLabel>
                 <SocialContainer>
-                    <CompanyImage src={"/linkedin.png"}  onClick={() => ImageButton("https://www.linkedin.com/in/omar-assaf97")}/>
-                    <CompanyImage src={"/github.png"} onClick={() => ImageButton("https://github.com/Omar-H-Assaf")}/>
+                    <CompanyImage src={"/linkedin.png"}  onClick={() => ImageButton("https://www.linkedin.com/in/omar-assaf97")} style={{ cursor: 'pointer'}}/>
+                    <CompanyImage src={"/github.png"} onClick={() => ImageButton("https://github.com/Omar-H-Assaf")} style={{ cursor: 'pointer' }} />
                 </SocialContainer>
                 <NameLabel style={{ color: '#333333' }}>
                     Languages

@@ -122,8 +122,8 @@ export const ToolContainer = styled.div({
 export const CompanyImage = styled.img({
     borderRadius: '10px', boxShadow: 'transparent 0 0 0 2px inset',
     overflow: 'hidden',
-    height: '3.125rem',
-    width: '3.125rem',
+    height: '4.125rem',
+    width: '4.125rem',
     '@media (max-width: 768px)': {
         height: '10.125rem',
         width: '10.125rem',
@@ -143,6 +143,7 @@ export const TechnoImage = styled.img({
 });
 
 export const TechnoText = styled.p({
+    marginTop: '1rem',
     '@media (max-width: 768px)': {
         fontSize: '3rem'
     }

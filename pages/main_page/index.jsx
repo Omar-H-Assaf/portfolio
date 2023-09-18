@@ -7,9 +7,9 @@ import { Image, ImageConatiner, Info, IntroContainer, MainPageContainer, NameLab
 export default function MainPage() {
     return (
         <>
-        <MainPageContainer>
-            <IntroContainer>
-                <NameLabelHome>
+            <MainPageContainer>
+                <IntroContainer>
+                    <NameLabelHome>
                         Hi, I'm Omar Assaf
                         <Title>
                             Software Engineer
@@ -18,13 +18,13 @@ export default function MainPage() {
                             Based in Dallas, Texas with Web Development.
                             I connect the dots and provide throuhtful solutions by focusing on strategy. I also make sure those experiance are a little bit fun.
                         </Info>
-                </NameLabelHome>
+                    </NameLabelHome>
                     <ImageConatiner>
                         <Image src={circle.src} />
 
                     </ImageConatiner>
-            </IntroContainer>
-        </MainPageContainer>
+                </IntroContainer>
+            </MainPageContainer>
             <About />
             <Experiance />
             <Work />

@@ -53,10 +53,16 @@ export const ContentContainer = styled.div({
     marginRight: '8rem',
     marginTop: '8rem',
     flexDirection: 'column',
+    '@media (max-width: 768px)': {
+        flexDirection: 'column',
+        justifyContent: 'center',
+        alignItems: 'center',
+    }
 });
 
 export const HeadLineContainer = styled.div({
     display: 'flex',
+    justifyContent: 'space-between',
     '@media (max-width: 768px)': {
         flexDirection: 'column',
     }
@@ -83,14 +89,16 @@ export const Description = styled.p({
     fontWeight: '400',
     color: 'rgb(240, 242, 248)',
     marginBottom: '16px',
+    width: '45%',
     '@media (max-width: 768px)': {
         fontSize: '2rem',
+        width: '100%'
     }
 })
 
 export const DescriptionContainer = styled.div({
     display: 'flex',
-    flexDirection: 'column'
+    flexDirection: 'column',
 })
 
 export const Description2 = styled.p({
@@ -101,8 +109,10 @@ export const Description2 = styled.p({
     color: 'rgb(240, 242, 248)',
     marginBottom: '16px',
     opacity: '0.8',
+    width: '45%',
     '@media (max-width: 768px)': {
         fontSize: '2rem',
+        width: '100%',
     }
 });
 

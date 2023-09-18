@@ -49,8 +49,8 @@ export default function Techno() {
             src: "/mysql.png"
         },
         {
-            name: "Dart",
-            src: "/dart.svg"
+            name: "Jest",
+            src: "/Jest.svg"
         },
         {
             name: "Express.JS",

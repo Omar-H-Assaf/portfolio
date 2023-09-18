@@ -1,6 +1,5 @@
 import { useRouter } from "next/router";
 import { motion, AnimatePresence } from "framer-motion";
-import "./global.css";
 import 'bootstrap/dist/css/bootstrap.css'
 
 const App = ({ Component, pageProps }) => {
