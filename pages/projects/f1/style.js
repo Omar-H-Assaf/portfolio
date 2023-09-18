@@ -66,7 +66,7 @@ export const Header = styled.h2({
 
 
 export const Description = styled.p({
-    fontSize: '26px',
+    fontSize: '20px',
     fontFamily: "sans-serif",
     lineHeight: '40px',
     letterSpacing: '0.25px',
@@ -97,6 +97,24 @@ export const Description2 = styled.p({
     '@media (max-width: 768px)': {
         fontSize: '2rem',
         width: '100%',
+    }
+});
+
+export const HrefGitHub = styled.a({
+    fontSize: '15px',
+    fontFamily: "sans-serif",
+    letterSpacing: '0.5px',
+    fontWeight: '400',
+    color: 'rgb(240, 242, 248)',
+    marginBottom: '16px',
+    opacity: '0.8',
+    width: '45%',
+    textDecoration: 'none',
+    '&:hover': {
+        color: '#65d2a3',
+    },
+    '@media (max-width: 768px)': {
+        fontSize: '2rem',
     }
 });
 

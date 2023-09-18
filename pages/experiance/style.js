@@ -89,9 +89,10 @@ export const Content = styled.p({
     color: '#333333',
     fontSize: '0.9rem',
     paddingBottom: '2rem',
+    marginTop: '2rem',
     '@media (max-width: 768px)': {
-        marginTop: '2rem',
-        fontSize: '1.6rem',
+       
+        fontSize: '1.9rem',
     }
 });
 

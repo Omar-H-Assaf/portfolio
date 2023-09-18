@@ -5,7 +5,7 @@ import Admin from "../../../public/real-estate/admin.png"
 import Offer from "../../../public/real-estate/offer.png"
 import Like from "../../../public/real-estate/like.png"
 import { useEffect } from "react";
-import { BigContainer, BottomContainer, Columncontainer, ContentContainer, Description, Description2, ExitButton, HeadLineContainer, Header, ImageFit, MediumContainer, PopUpContainer, Rowcontainer, SmallContainer } from "../f1/style";
+import { BigContainer, BottomContainer, Columncontainer, ContentContainer, Description, Description2, ExitButton, HeadLineContainer, Header, HrefGitHub, ImageFit, MediumContainer, PopUpContainer, Rowcontainer, SmallContainer } from "../f1/style";
 
 export default function RealEstate() {
     useEffect(() => {
@@ -26,7 +26,10 @@ export default function RealEstate() {
                     Welcome to the future of property management! Our Property Management Portal is your one-stop destination for efficient and streamlined property management, designed to make your life as a property owner, landlord, or property manager easier than ever before.
                 </Description>
                 <Description2>
-                    Creating a Property Management Portal application using React, Spring Boot, and PostgreSQL is a robust and modern approach to building a feature-rich, scalable, and efficient platform for property management. This combination of technologies allows for a seamless user experience, powerful backend functionality, and robust database management. 
+                    Creating a Property Management Portal application using React, Spring Boot, and PostgreSQL is a robust and modern approach to building a feature-rich, scalable, and efficient platform for property management. This combination of technologies allows for a seamless user experience, powerful backend functionality, and robust database management.
+                    <br />
+                    <br />
+                    <HrefGitHub target="_blank" href="https://github.com/Omar-H-Assaf/real_estate_application">https://github.com/Omar-H-Assaf/real_estate_application</HrefGitHub>
                 </Description2>
             </HeadLineContainer>
         </ContentContainer>

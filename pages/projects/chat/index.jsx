@@ -5,7 +5,7 @@ import Login from "../../../public/chat/login.png"
 import SignUp from "../../../public/chat/signup.png"
 import Phone from "../../../public/chat/phone.png"
 import { useEffect } from "react";
-import { BigContainer, BottomContainer, Columncontainer, ContentContainer, Description, Description2, ExitButton, HeadLineContainer, Header, ImageFit, MediumContainer, PopUpContainer, Rowcontainer, SmallContainer } from "../f1/style";
+import { BigContainer, BottomContainer, Columncontainer, ContentContainer, Description, Description2, ExitButton, HeadLineContainer, Header, HrefGitHub, ImageFit, MediumContainer, PopUpContainer, Rowcontainer, SmallContainer } from "../f1/style";
 
 export default function Chat() {
     useEffect(() => {
@@ -26,7 +26,11 @@ export default function Chat() {
                     In today's fast-paced digital world, communication is at the heart of our interactions. A chat application is a versatile and indispensable tool that empowers individuals and businesses to connect and converse in real time, regardless of geographical boundaries.
                 </Description>
                 <Description2>
-                    Creating a chat application using Node.js, Firebase, HTML, CSS, and Bootstrap empowers you to build a real-time communication platform that meets the needs of today's digitally connected world. Whether it's for personal use or a broader audience, your chat app can facilitate seamless interactions, foster collaboration, and bring people together. With dedication and creativity, you can create a chat application that offers both functionality and aesthetics, making it a valuable addition to the digital landscape.                </Description2>
+                    Creating a chat application using Node.js, Firebase, HTML, CSS, and Bootstrap empowers you to build a real-time communication platform that meets the needs of today's digitally connected world. Whether it's for personal use or a broader audience, your chat app can facilitate seamless interactions, foster collaboration, and bring people together. With dedication and creativity, you can create a chat application that offers both functionality and aesthetics, making it a valuable addition to the digital landscape. 
+                    <br />
+                    <br />
+                    <HrefGitHub target="_blank" href="https://github.com/Omar-H-Assaf/wap-chat">https://github.com/Omar-H-Assaf/wap-chat</HrefGitHub>
+                    </Description2>
             </HeadLineContainer>
         </ContentContainer>
         <BottomContainer>
