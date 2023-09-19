@@ -85,7 +85,7 @@ export const Date = styled.div({
     }
 });
 
-export const Content = styled.p({
+export const Content = styled.div({
     color: '#333333',
     fontSize: '0.9rem',
     paddingBottom: '2rem',

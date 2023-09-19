@@ -78,7 +78,7 @@ export default function Experiance() {
                                     {elm.bulletpoints.map((point, index) => {
                                         return (
                                             <li key={index}>
-                                                {point}
+                                                    {point}
                                             </li>
                                         )
                                     })                            
