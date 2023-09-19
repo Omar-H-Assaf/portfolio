@@ -9,7 +9,7 @@ export default function About() {
                 <Aboutcontentcontainer>
                     <AboutImage src="/omar.jpeg" />
                     <ContentLabel style={{ color: '#333333' }}>
-                        I am an accomplished Software Engineer with more than 3-year track record, primarily within the dynamic entertainment sector. My expertise lies in front-end development utilizing NextJS and React, as well as back-end proficiency with NodeJs and Python. In addition, I possess a strong command of database technologies including MySQL and MongoDB.
+                        I am an accomplished Software Engineer with more than 3-years track record, primarily within the dynamic entertainment sector. My expertise lies in front-end development utilizing NextJS and React, as well as back-end proficiency with NodeJs and Python. In addition, I possess a strong command of database technologies including MySQL and MongoDB.
                     </ContentLabel>
                 </Aboutcontentcontainer>
             </AboutBorder>
