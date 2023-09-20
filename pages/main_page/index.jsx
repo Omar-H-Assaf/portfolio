@@ -4,6 +4,7 @@ import Work from "../work";
 import circle from "../../public/circle.jpg";
 import { Image, ImageConatiner, Info, IntroContainer, MainPageContainer, NameLabelHome, Title } from "./style";
 import { useEffect } from "react";
+import style from '../../styles/Home.module.css';
 
 export default function MainPage() {
     useEffect(() => {
@@ -13,9 +14,11 @@ export default function MainPage() {
     return (
         <>
             <MainPageContainer>
-                <IntroContainer>
-                    <NameLabelHome>
-                        Hi, I'm Omar Assaf
+                <IntroContainer className={style.wrapper}>
+                    <NameLabelHome >
+                        <div className={style.typing}>
+                            Hi, I'm Omar Assaf
+                        </div>
                         <Title>
                             Software Engineer
                         </Title>

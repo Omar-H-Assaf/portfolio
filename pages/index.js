@@ -3,16 +3,17 @@ import MainPage from './main_page';
 import { useEffect } from 'react';
 
 export default function Home() {
-  //333333
   useEffect(() => {
-    const script = document.createElement('script');
-    script.async = true;
-    script.src = "https://www.googletagmanager.com/gtag/js?id=G-9ZMDB3JB76";
-    document.body.appendChild(script);
-    window.dataLayer = window.dataLayer || [];
-    function gtag() { dataLayer.push(arguments); }
-    gtag('js', new Date());
-    gtag('config', 'G-9ZMDB3JB76');
+    if (!/localhost/.test(window.location.href)){
+      const script = document.createElement('script');
+      script.async = true;
+      script.src = "https://www.googletagmanager.com/gtag/js?id=G-9ZMDB3JB76";
+      document.body.appendChild(script);
+      window.dataLayer = window.dataLayer || [];
+      function gtag() { dataLayer.push(arguments); }
+      gtag('js', new Date());
+      gtag('config', 'G-9ZMDB3JB76');
+    }
 
   }, [])
   return (

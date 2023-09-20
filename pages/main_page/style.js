@@ -14,7 +14,7 @@ export const MainPageContainer = styled.div({
 
 export const Image = styled.img({
     height: '100%',
-    width: '100%',
+    width: '60%',
     border: 'none',
     opacity: 0.5,
     '@media (max-width: 768px)': {
@@ -24,16 +24,17 @@ export const Image = styled.img({
 
 export const ImageConatiner = styled.div({
     position: 'absolute',
-    top: -400,
-    right: -900,
+    top: -170,
+    right: -1150,
     '@media (max-width: 768px)': {
         top: 0,
         right: -750,
+        display: 'none'
     }
 })
 
 export const IntroContainer = styled.div({
-    width: "80%",
+    width: "97%",
     position: 'absolute',
     height: '100%',
     cursor: 'default',
@@ -49,6 +50,7 @@ export const NameLabelHome = styled.div({
     fontSize: '3rem',
     paddingBottom: '5rem',
     position: 'absolute',
+    animation: 'typing 2s steps(22), blink .5s step-end infinite alternate',
     zIndex: 90,
     height: '100%',
     '@media (max-width: 768px)': {
