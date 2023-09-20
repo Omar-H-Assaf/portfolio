@@ -52,7 +52,7 @@ export default function Experiance() {
         <ExperianceContainer id="experiance">
             <AboutBorder>
                 <NameLabel style={{ color: '#333333' }}>
-                    Experiances
+                    Experiences
                 </NameLabel>
                 {arr.map((elm, index) => {
                     return (

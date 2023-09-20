@@ -21,7 +21,7 @@ export default function MainPage() {
                         </Title>
                         <Info>
                             Based in Dallas, Texas with Web Development.
-                            I connect the dots and provide throuhtful solutions by focusing on strategy. I also make sure those experiance are a little bit fun.
+                            I connect the dots and provide thoughtful solutions by focusing on strategy. I also make sure those experience are a little bit fun.
                         </Info>
                     </NameLabelHome>
                     <ImageConatiner>
