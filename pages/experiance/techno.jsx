@@ -53,8 +53,8 @@ export default function Techno() {
             src: "/Jest.svg"
         },
         {
-            name: "Express.JS",
-            src: "/express-js.svg"
+            name: "FastAPI",
+            src: "/fastapi.svg"
         },
         {
             name: "WCAG 2.1",
