@@ -26,9 +26,7 @@ export default function Experiance() {
                 'Set up CI/CD pipelines using tools like GitHub Actions to automate the build, test, and deployment process.',
                 'Ensured websites adhered to WCAG guidelines, making them accessible to a wide range of users, including those with disabilities.',
                 'Developed server-side applications, using the asynchronous, event-driven architecture of NodeJS to build scalable, high-performance web services and APIs. Applied frameworks like ExpressJS to streamline development and enhance code organization.',
-                "Developed server-side applications, using FastAPI, Leveraged FastAPI's automatic data validation and documentation generation features to build scalable and efficient web services and APIs.",
                 'Collaborated with international teams, demonstrating strong communication and adaptability skills to work across time zones and cultural differences in a diverse, distributed team environment.'
-            
             ]
         },
         {
