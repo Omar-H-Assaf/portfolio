@@ -13,7 +13,7 @@ export default function Experiance() {
 
     const arr = [
         {
-            src: 'https://media.licdn.com/dms/image/D4E0BAQG0op6GSZa1PQ/company-logo_200_200/0/1694246235698?e=1703116800&v=beta&t=_PXhiAd3N1GMGULUmjhkPaJsyxBX77pS6XRxTsylCQo',
+            src: 'https://media.licdn.com/dms/image/D4E0BAQG0op6GSZa1PQ/company-logo_200_200/0/1694246237575?e=1711584000&v=beta&t=wEdn9qKvEN1Syam8fGNQ1dOj9Jg45pYhBtD1hqkXqU8',
             jobtitle: 'Software Engineer - Full-Time',
             href: 'https://optimumpartners.co/',
             date: 'Jun 2021 - Jun 2023',
@@ -26,7 +26,7 @@ export default function Experiance() {
                 'Set up CI/CD pipelines using tools like GitHub Actions to automate the build, test, and deployment process.',
                 'Ensured websites adhered to WCAG guidelines, making them accessible to a wide range of users, including those with disabilities.',
                 'Developed server-side applications, using the asynchronous, event-driven architecture of NodeJS to build scalable, high-performance web services and APIs. Applied frameworks like ExpressJS to streamline development and enhance code organization.',
-                'Collaborated with international teams, demonstrating strong communication and adaptability skills to work across time zones and cultural differences in a diverse, distributed team environment.'
+                'Implemented serverless data processing solutions using AWS Lambda and S3, enabling automated file processing, real-time data transformations, and event-driven architectures.'
             ]
         },
         {
