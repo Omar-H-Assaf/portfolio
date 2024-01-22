@@ -51,7 +51,9 @@ export default function Home() {
     padding: 20px;
     font-size: 15px;
 }
-
+#__next {
+    width: 100%
+}
 /* cards container */
 .cards {
     position: relative;
