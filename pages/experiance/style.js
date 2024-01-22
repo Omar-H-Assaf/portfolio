@@ -5,7 +5,7 @@ export default function Home1() {
 }
 
 export const Href = styled.a({
-    color: '#333333',
+    color: '#EBEBEB',
     cursor: 'pointer',
     textDecoration: 'none',
     fontSize: '0.9rem',
@@ -21,7 +21,7 @@ export const Href = styled.a({
 export const JobContainer = styled.div({
     fontFamily: 'Andale Mono, monospace',
     fontSize: '1.5rem',
-    color: '#333333',
+    color: '#EBEBEB',
     cursor: 'default',
     display: 'flex',
     alignItems: 'center',
@@ -35,7 +35,7 @@ export const JobContainer = styled.div({
 export const JobContent = styled.ul({
     fontFamily: 'Andale Mono, monospace',
     fontSize: '1rem',
-    color: '#333333',
+    color: '#EBEBEB',
     margin: '2rem'
 })
 
@@ -52,9 +52,8 @@ export const ExperianceContainer = styled.div({
     height: "100%",
     width: "100%",
     paddingTop: '5rem',
-    animation: 'wipe-enter 1s infinite',
     padding: '4rem',
-    backgroundColor: '#F1FBF7',
+    backgroundImage: 'linear-gradient(to right top, #237e8b, #257987, #277383, #286e7f, #2a697a, #2c6476, #2d6072, #2e5b6d, #2f5668, #2f5163, #2f4d5d, #2f4858);',
     '@media (max-width: 768px)': {
         paddingLeft: '3rem',
         paddingRight: '3rem',
@@ -76,7 +75,7 @@ export const ImageContainer = styled.div({
 });
 
 export const Date = styled.div({
-    color: '#333333',
+    color: '#EBEBEB',
     fontSize: '0.9rem',
     '@media (max-width: 768px)': {
         fontSize: '1.5rem',
@@ -86,7 +85,7 @@ export const Date = styled.div({
 });
 
 export const Content = styled.div({
-    color: '#333333',
+    color: '#EBEBEB',
     fontSize: '0.9rem',
     paddingBottom: '2rem',
     marginTop: '2rem',
@@ -115,6 +114,7 @@ export const ToolContainer = styled.div({
     flexDirection: 'column',
     alignItems: 'center',
     marginLeft: '3rem',
+    background: '#EBEBEB',
     '@media (max-width: 768px)': {
         height: '18rem',
         width: '18rem',
@@ -160,7 +160,29 @@ export const JobDescription = styled.div({
     }
 })
 
+export const SelectCategory = styled.div({
+    margin: '1rem',
+    color: (props) => props.selected ? '#65d2a3' : '#EBEBEB',
+    fontSize: '1.2rem',
+    cursor: 'pointer',
+    '&:hover': {
+        color: '#65d2a3',
+    },
+    '@media (max-width: 768px)': {
+        fontSize: '2.2rem',
+    }
+
+})
+
+export const CategoryContainer = styled.div({
+    display: 'flex',
+    gap: '40px',
+    marginBottom: '5rem',
+})
+
 export const Tool = styled.div({
+    minHeight: '22rem',
+    width:'100%'
     // display: 'flex',
     // justifyContent: 'space-between',
 });

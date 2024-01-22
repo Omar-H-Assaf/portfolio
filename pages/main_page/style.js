@@ -84,7 +84,7 @@ export const ContentLabel = styled.div({
     }
 });
 
-export const Title = styled.p({
+export const Title = styled.div({
     fontFamily: 'Andale Mono, monospace',
     color: '#65d2a3',
     fontSize: '2rem',
@@ -105,6 +105,21 @@ export const Info = styled.p({
     }
 })
 
+export const ConsolUnderScore = styled.div({
+    
+    display: 'inline-block',
+    position: 'relative',
+    top: '-0.14em',
+    left: '10px',
+    fontFamily: 'Andale Mono, monospace',
+    fontSize: '2rem',
+    paddingBottom: '3rem',
+    '@media (max-width: 768px)': {
+        fontSize: '4rem',
+    }
+})
+
 export default function Home1() {
     return <>{/* nothing */}</>;
 };
+

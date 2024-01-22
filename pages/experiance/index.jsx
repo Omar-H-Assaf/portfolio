@@ -16,7 +16,7 @@ export default function Experiance() {
             src: 'https://media.licdn.com/dms/image/D4E0BAQG0op6GSZa1PQ/company-logo_200_200/0/1694246237575?e=1711584000&v=beta&t=wEdn9qKvEN1Syam8fGNQ1dOj9Jg45pYhBtD1hqkXqU8',
             jobtitle: 'Software Engineer - Full-Time',
             href: 'https://optimumpartners.co/',
-            date: 'Jun 2021 - Jun 2023',
+            date: '2021 - 2023',
             name: 'Optimum Partners',
             content: 'Outsourced for US-based Hearst Media Monetization – Ad Product and Tech team.',
             bulletpoints: [
@@ -33,7 +33,7 @@ export default function Experiance() {
             src: Dinffo.src,
             jobtitle: 'Full-Stack Developer - Full-Time',
             href: 'https://www.dinffo.com/',
-            date: 'Mar 2020 - Jun 2021',
+            date: '2020 - 2021',
             name: 'DINFFO',
             content: 'Outsourced for US-based Hearst Media Monetization – Ad Product and Tech team.',
             bulletpoints: [
@@ -50,15 +50,46 @@ export default function Experiance() {
     return (
         <ExperianceContainer id="experiance">
             <AboutBorder>
-                <NameLabel style={{ color: '#333333' }}>
+                <NameLabel>
                     Experiences
                 </NameLabel>
-                {arr.map((elm, index) => {
+
+                <div class="timeline">
+                    <div class="outer">
+                        {arr.map((elm, index) => {
+                            return (
+                                <div class="cards" key={index}>
+                                    <div class="info">
+                                        <h3 class="title">{elm.jobtitle}</h3>
+                                        <p className='year'>{elm.name} {elm.date}</p>
+                                        <Content>
+                                            <div style={{textAlign: 'center'}}>
+                                                {elm.content}
+                                            </div>
+
+                                            <ul style={{ marginTop: '1rem' }}>
+                                                {elm.bulletpoints.map((point, index) => {
+                                                    return (
+                                                        <li key={index}>
+                                                            {point}
+                                                        </li>
+                                                    )
+                                                })
+                                                }
+                                            </ul>
+                                        </Content>
+                                    </div>
+                                </div>
+                            )
+                        })}
+                    </div>
+                </div>
+                {/* {arr.map((elm, index) => {
                     return (
                         <div key={index}>
                             <JobContainer >
                                 <ImageContainer>
-                                    <CompanyImage src={elm.src}/>
+                                    <CompanyImage src={elm.src} />
                                     <JobDescription>
                                         <JobTitle>
                                             {elm.jobtitle}
@@ -73,14 +104,14 @@ export default function Experiance() {
                             </JobContainer>
                             <Content>
                                 {elm.content}
-                                <ul style={{marginTop: '1rem'}}>
+                                <ul style={{ marginTop: '1rem' }}>
                                     {elm.bulletpoints.map((point, index) => {
                                         return (
                                             <li key={index}>
-                                                    {point}
+                                                {point}
                                             </li>
                                         )
-                                    })                            
+                                    })
                                     }
                                 </ul>
                             </Content>
@@ -88,23 +119,9 @@ export default function Experiance() {
                             <br />
                         </div>
                     );
-                })}
+                })} */}
                 <Techno />
 
-                <NameLabel style={{ color: '#333333' }}>
-                    Social Netwrok
-                </NameLabel>
-                <SocialContainer>
-                    <CompanyImage src={"/linkedin.png"}  onClick={() => ImageButton("https://www.linkedin.com/in/omar-assaf97")} style={{ cursor: 'pointer'}}/>
-                    <CompanyImage src={"/github.png"} onClick={() => ImageButton("https://github.com/Omar-H-Assaf")} style={{ cursor: 'pointer' }} />
-                </SocialContainer>
-                <NameLabel style={{ color: '#333333' }}>
-                    Languages
-                </NameLabel>
-                <SocialContainer>
-                    <CompanyImage src={"/united-kingdom.png"} />
-                    <CompanyImage src={"/united-arab.png"} />
-                </SocialContainer>
             </AboutBorder>
 
         </ExperianceContainer>

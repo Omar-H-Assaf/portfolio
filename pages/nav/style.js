@@ -9,10 +9,9 @@ export const Nav = styled.nav({
     padding: '2rem',
     position: 'sticky',
     top: 0,
-    backgroundColor: (props) => props.scroll === "true" ?'#000': 'transparent',
+    backgroundColor: '#2F4858',
     zIndex: 9999,
     transition: 'all .2s',
-    opacity: '0.7',
     '@media (max-width: 768px)': {
         height: '6rem',
     }

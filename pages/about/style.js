@@ -4,9 +4,11 @@ export const AboutContainer = styled.div({
     alignItems: "center",
     height: "100%",
     width: "100%",
+    display: 'flex',
+    flexDirection: 'column',
     paddingTop: '5rem',
     animation: 'wipe-enter 1s infinite',
-    backgroundColor: '#F1FBF7',
+    backgroundImage: 'linear-gradient(to right top, #237e8b, #257987, #277383, #286e7f, #2a697a, #2c6476, #2d6072, #2e5b6d, #2f5668, #2f5163, #2f4d5d, #2f4858);',
     padding: '4rem',
     zIndex: 100,
     position: 'relative',
@@ -15,6 +17,8 @@ export const AboutContainer = styled.div({
         paddingRight: '3rem',
     }
 });
+
+//#2F4858 //#2C6274 #237E8B
 
 export const Aboutcontentcontainer = styled.div({
     display: 'flex',
@@ -29,19 +33,20 @@ export default function Home1() {
 }
 
 export const AboutBorder = styled.div({
-    backgroundColor: 'white',
-    boxShadow: 'transparent 0 0 0 2px inset',
+    // backgroundColor: 'white',
+    // boxShadow: 'transparent 0 0 0 2px inset',
     overflow: 'hidden',
     borderRadius: '32px',
     width: '100%%',
+    display: 'flex',
+    justifyContent: 'center',
+    flexDirection: 'column',
+    alignItems: 'center',
+
     padding: '2rem',
     '@media (max-width: 768px)': {
         paddingLeft: '3rem',
         paddingRight: '3rem',
-        display: 'flex',
-        justifyContent: 'center',
-        flexDirection: 'column',
-        alignItems: 'center'
     }
 });
 
