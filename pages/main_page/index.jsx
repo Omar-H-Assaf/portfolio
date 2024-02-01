@@ -6,6 +6,7 @@ import { ConsolUnderScore, Image, ImageConatiner, Info, IntroContainer, MainPage
 import { useEffect } from "react";
 import style from '../../styles/Home.module.css';
 import Footer from "../footer";
+import Contact from "../contact";
 
 export default function MainPage() {
     useEffect(() => {
@@ -87,6 +88,7 @@ export default function MainPage() {
             {/* <About /> */}
             <Experiance />
             <Work />
+            <Contact />
             <Footer />
             {/* <Contact /> */}
         </>)

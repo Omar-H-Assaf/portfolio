@@ -47,6 +47,8 @@ export default function Experiance() {
 
     ]
 
+    //https://lnqchk9qcd.execute-api.us-east-1.amazonaws.com/v1/experience
+
     return (
         <ExperianceContainer id="experiance">
             <AboutBorder>

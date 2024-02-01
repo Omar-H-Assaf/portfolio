@@ -18,7 +18,7 @@ export default function Work() {
     return (
         <AboutContainer id="work">
             <NameLabel>
-                Experiences
+                Projects
             </NameLabel>
             <NameLabel>
                 This is a collection of some projects.
