@@ -6,72 +6,72 @@ import { AnimatePresence, motion } from "framer-motion";
 const arr = [
     {
         name: "React.JS",
-        src: "/physics.png",
+        src: "https://assaf-omar-portfolio.s3.amazonaws.com/images/physics.png",
         type: ["Frontend", "All"]
     },
     {
         name: "Node.JS",
-        src: "/nodejs.svg",
+        src: "https://assaf-omar-portfolio.s3.amazonaws.com/images/nodejs.svg",
         type: ["Backend", "All"]
     },
     {
         name: "Next.JS",
-        src: "/nextjs.svg",
+        src: "https://assaf-omar-portfolio.s3.amazonaws.com/images/nextjs.svg",
         type: ["Frontend", "All"]
     },
     {
         name: "GraphQL",
-        src: "/graphql.svg",
+        src: "https://assaf-omar-portfolio.s3.amazonaws.com/images/graphql.svg",
         type: ["Frontend", "All"]
     },
     {
         name: "JavaScript",
-        src: "/java-script.png",
+        src: "https://assaf-omar-portfolio.s3.amazonaws.com/images/java-script.png",
         type: ["Frontend", "Backend", "All"]
     },
     {
         name: "TypeScript",
-        src: "/typescript.png",
+        src: "https://assaf-omar-portfolio.s3.amazonaws.com/images/typescript.png",
         type: ["Frontend", "Backend", "All"]
     },
     {
         name: "Jira",
-        src: "/jira.svg",
+        src: "https://assaf-omar-portfolio.s3.amazonaws.com/images/jira.svg",
         type: ["Others", "All"]
     },
     {
         name: "Python",
-        src: "/python.png",
+        src: "https://assaf-omar-portfolio.s3.amazonaws.com/images/python.png",
         type: ["Backend", "All"]
     },
     {
         name: "VS Code",
-        src: "/vs-code.svg",
+        src: "https://assaf-omar-portfolio.s3.amazonaws.com/images/vs-code.svg",
         type: ["Others", "All"]
     },
     {
         name: "MongoDB",
-        src: "/mongodb.png",
+        src: "https://assaf-omar-portfolio.s3.amazonaws.com/images/mongodb.png",
         type: ["Backend", "All"]
     },
     {
         name: "MySQL",
-        src: "/mysql.png",
+        src: "https://assaf-omar-portfolio.s3.amazonaws.com/images/mysql.png",
         type: ["Backend", "All"]
     },
     {
         name: "Jest",
-        src: "/Jest.svg",
+        src: "https://assaf-omar-portfolio.s3.amazonaws.com/images/Jest.svg",
         type: ["Frontend", "Backend", "All"]
     },
     {
-        name: "FastAPI",
-        src: "/fastapi.svg",
-        type: ["Frontend", "All"]
+        name: "AWS",
+        src: "https://assaf-omar-portfolio.s3.amazonaws.com/images/amazon-aws.svg",
+        type: ["Other", "All"]
     },
     {
         name: "WCAG 2.1",
-        src: "/WCAG.png",
+        src: "https://assaf-omar-portfolio.s3.amazonaws.com/images/WCAG.png",
         type: ["Frontend", "All"]
     }
 ];
@@ -89,7 +89,7 @@ const mystyle = {
     alignItems: 'center',
     marginLeft: '3rem',
     background: '#EBEBEB',
-    '@media (max-width: 768px)': {
+    '@media (maxWidth: 768px)': {
         height: '18rem',
         width: '18rem',
     }
@@ -106,7 +106,7 @@ export default function Techno() {
     return (
         <>
             <NameLabel>
-                Tools
+                Skills
             </NameLabel>
             <CategoryContainer>
                 <SelectCategory selected={selected === 'All'} onClick={() => categorySelected('All')}>All</SelectCategory>

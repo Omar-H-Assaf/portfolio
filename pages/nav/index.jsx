@@ -43,7 +43,7 @@ export default function NavBar() {
                 <NavLabel onClick={() => about("work")}>
                     Projects
                 </NavLabel>
-                <NavLabel onClick={() => router.push('mailto:omar.assaf97@icloud.com')}>
+                <NavLabel onClick={() => about("contact")}>
                     contact
                 </NavLabel>
                 <Button onClick={resumeDownload}>

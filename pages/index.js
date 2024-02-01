@@ -45,11 +45,11 @@ export default function Home() {
         * {
           box-sizing: border-box;
         }
-        .timeline {
-    background: var(--primary-color);
-    margin: 20px auto;
-    padding: 20px;
-    font-size: 15px;
+    .timeline {
+      background: var(--primary-color);
+      margin: 20px auto;
+      padding: 20px;
+      font-size: 15px;
 }
 #__next {
     width: 100%
