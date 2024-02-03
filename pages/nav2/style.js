@@ -19,7 +19,7 @@ export const NavHref = styled.a({
     flexShrink: 0,
     cursor: 'pointer',
     writingMode: 'vertical-lr',
-    fontSize: '1.4rem',
+    fontSize: '1.2rem',
     fontWeight: 200,
     textDecoration: 'none',
     color: '#ebecf3',

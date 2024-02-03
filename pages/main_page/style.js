@@ -34,9 +34,6 @@ export const ImageConatiner = styled.div({
 })
 
 export const IntroContainer = styled.div({
-    width: "97%",
-    position: 'absolute',
-    height: '100%',
     cursor: 'default',
     '@media (max-width: 768px)': {
         width: "100%",
