@@ -2,15 +2,15 @@ import About from "../about";
 import Experiance from "../experiance";
 import Work from "../work";
 import circle from "../../public/circle.jpg";
-import { ConsolUnderScore, Image, ImageConatiner, Info, IntroContainer, MainPageContainer, NameLabelHome, Title } from "./style";
+import { ConsolUnderScore, DotContainer, HomeH1, Image, ImageConatiner, Info, IntroContainer, MainPageContainer, NameLabelHome, SingleDotContainer, SpanDot, TheDot, Title } from "./style";
 import { useEffect } from "react";
 import style from '../../styles/Home.module.css';
 import Footer from "../footer";
 import Contact from "../contact";
+import NavBar from "../nav";
 
 export default function MainPage() {
     useEffect(() => {
-        document.body.style.backgroundColor = "#2F4858";
         consoleText(['Software Engineer', 'Frontend Developer', 'Backend Developer'], 'text', ['tomato', '#65d2a3', 'lightblue']);
 
         function consoleText(words, id, colors) {
@@ -65,14 +65,30 @@ export default function MainPage() {
         }
     }, []);
 
+
+    const rows = [];
+    for (let i = 0; i < 400; i++) {
+        
+        rows.push(
+            <SingleDotContainer key={i}>
+                <TheDot />
+            </SingleDotContainer>);
+    }
+
     return (
         <>
+            <NavBar />
             <MainPageContainer id="about">
                 <IntroContainer className={style.wrapper}>
                     <NameLabelHome >
                         <div >
-                            Hi, I'm Omar Assaf
+                            <HomeH1>
+                                Hi, I'm Omar
+                                <SpanDot>.</SpanDot>
+
+                            </HomeH1>
                         </div>
+                        
                         <Title>
                             <div style={{ display: "flex" }}><span id='text'></span><ConsolUnderScore className='console-underscore' id='console'>&#95;</ConsolUnderScore></div>
 
@@ -84,6 +100,9 @@ export default function MainPage() {
                     </NameLabelHome>
 
                 </IntroContainer>
+                <DotContainer>
+                    {rows}
+                </DotContainer>
             </MainPageContainer>
             {/* <About /> */}
             <Experiance />

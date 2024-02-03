@@ -1,9 +1,11 @@
 import Image from "next/image";
 import { AboutBorder } from "../about/style";
-import { NameLabel } from "../main_page/style";
+import { HomeH1, Line, NameLabel, SpanDot, TitleContainer } from "../main_page/style";
 import { CompanyImage, Content, Date, ExperianceContainer, Href, ImageContainer, JobContainer, JobContent, JobDescription, JobTitle, ListContent, SocialContainer } from "./style";
 import Techno from "./techno";
 import Dinffo from "../../public/DINFFO.webp"
+import { useEffect, useState } from "react";
+import axios from "axios";
 
 export default function Experiance() {
 
@@ -47,30 +49,42 @@ export default function Experiance() {
 
     ]
 
+    const [experiance, setExperiance] = useState([])
+
+    useEffect(()=> {
+        axios.get("https://lnqchk9qcd.execute-api.us-east-1.amazonaws.com/v1/experience")
+            .then((res) => setExperiance(res.data.response.Items))
+            .catch((err) => console.log(err))
+    }, [])
+
     //https://lnqchk9qcd.execute-api.us-east-1.amazonaws.com/v1/experience
 
     return (
         <ExperianceContainer id="experiance">
             <AboutBorder>
-                <NameLabel>
-                    Experiences
-                </NameLabel>
+                <TitleContainer>
+                    <HomeH1 style={{fontSize: '3rem'}}>
+                        Experience
+                        <SpanDot>.</SpanDot>
 
-                <div class="timeline">
-                    <div class="outer">
-                        {arr.map((elm, index) => {
+                    </HomeH1>
+                    <Line />
+                </TitleContainer>
+                <div className="timeline">
+                    <div className="outer">
+                        {experiance.map((elm, index) => {
                             return (
-                                <div class="cards" key={index}>
-                                    <div class="info">
-                                        <h3 class="title">{elm.jobtitle}</h3>
-                                        <p className='year'>{elm.name} {elm.date}</p>
+                                <div className="cards" key={index}>
+                                    <div className="info">
+                                        <h3 className="title">{elm.title.S} {elm.term.S}</h3>
+                                        <p className='year'>{elm.companyName.S} {elm.yearFrom.N} - {elm.yearTo.N}</p>
                                         <Content>
                                             <div style={{textAlign: 'center'}}>
-                                                {elm.content}
+                                                {elm.headline.S}
                                             </div>
 
                                             <ul style={{ marginTop: '1rem' }}>
-                                                {elm.bulletpoints.map((point, index) => {
+                                                {elm.descriptions.SS.map((point, index) => {
                                                     return (
                                                         <li key={index}>
                                                             {point}

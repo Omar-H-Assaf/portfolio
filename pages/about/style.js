@@ -2,14 +2,12 @@ import { styled } from "styled-components";
 
 export const AboutContainer = styled.div({
     alignItems: "center",
-    height: "100%",
     width: "100%",
     display: 'flex',
     flexDirection: 'column',
-    paddingTop: '5rem',
     animation: 'wipe-enter 1s infinite',
-    backgroundImage: 'linear-gradient(to right top, #237e8b, #257987, #277383, #286e7f, #2a697a, #2c6476, #2d6072, #2e5b6d, #2f5668, #2f5163, #2f4d5d, #2f4858);',
-    padding: '4rem',
+    padding: '9.6rem',
+    paddingTop: '0px',
     zIndex: 100,
     position: 'relative',
     '@media (max-width: 768px)': {

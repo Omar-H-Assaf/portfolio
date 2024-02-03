@@ -1,17 +1,18 @@
 import styled from 'styled-components'
 
-export const Nav = styled.nav({
-    alignItems: "center",
-    display: "flex",
-    height: "4rem",
-    width: "100%",
+export const Header = styled.header({
+    height: '4rem',
+    padding: '3.6rem',
+    display: 'flex',
+    alignItems: 'center',
     justifyContent: 'space-between',
-    padding: '2rem',
     position: 'sticky',
     top: 0,
-    backgroundColor: '#2F4858',
-    zIndex: 9999,
-    transition: 'all .2s',
+    zIndex: 99999,
+    background: 'hsla(0,0%,7%,.25)',
+    backdropFilter: 'blur(12px)',
+    fontSize: '2.2rem',
+    fontWeight: 700,
     '@media (max-width: 768px)': {
         height: '6rem',
     }
@@ -35,7 +36,7 @@ export const NavLabel = styled.div({
     '@media (max-width: 768px)': {
         fontSize: '2.2rem',
     }
-    
+
 })
 
 export const LogoContainer = styled.div({
@@ -43,18 +44,28 @@ export const LogoContainer = styled.div({
 })
 
 export const Button = styled.div({
-    height: '2rem',
-    width: '6rem',
+
+    fontSize: '0.9rem',
     cursor: 'pointer',
     border: 'solid',
-    borderColor: '#EBEBEB',
+    borderColor: '#0aff9d',
     display: 'flex',
     alignItems: 'center',
-    color: '#EBEBEB',
+    borderRadius: '4px',
+    color: '#0aff9d',
+    padding: '1.2rem 2.4rem',
     justifyContent: 'center',
+    transition: 'background-color 0.3s ease',
+    '&:before': {
+        transform: 'scaleX(0)',
+        transition: 'transform 0.3s ease',
+    },
     '&:hover': {
-        color: '#65d2a3',
-        borderColor: '#65d2a3',
+        background: '#0aff9d',
+        color: '#111',
+        '&:before': {
+            transform: 'scaleX(1)',
+        },
     },
     '@media (max-width: 768px)': {
         fontSize: '2rem',

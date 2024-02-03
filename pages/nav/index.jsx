@@ -1,59 +1,27 @@
-import Image from "next/image";
-import { Button, LogoContainer, Nav, NavLabel, NavLabelContainer } from "./style";
-import { useState } from "react";
-import { useRouter } from "next/router";
+import { Button, Header } from "./style";
+import { CompanyImage, SocialContainer } from "../experiance/style";
 
 export default function NavBar() {
-    const router = useRouter()
-    const [isScrolling, setIsScrolling] = useState("false")
-
-    const about = (id) => {
-        if (typeof document !== 'undefined') {
-            const elm = document.getElementById(id);
-            elm.scrollIntoView();
-        }
-    }
 
     const resumeDownload = () => {
         window.open('ASSAFOmar-Resume.pdf')
     }
-    if (typeof window !== 'undefined') {
-        window.onscroll = function () {
-            const top = window.scrollY;
-            if(top > 100) {
-                setIsScrolling("true");
-            } else {
-                setIsScrolling("false");
-            }
-        }
-    }
+
 
     return (
-        <Nav scroll={isScrolling}>
-            <LogoContainer>
-                <Image alt="logo" src="/oa-white.png" width={40} height={40}/>
-            </LogoContainer>
-            <NavLabelContainer>
-                <NavLabel onClick={() => about("about")}>
-                    About
-                </NavLabel>
-                <NavLabel onClick={() => about("experiance")}>
-                    Experiance
-                </NavLabel>
-                <NavLabel onClick={() => about("work")}>
-                    Projects
-                </NavLabel>
-                <NavLabel onClick={() => about("contact")}>
-                    contact
-                </NavLabel>
+        <Header>
+            
+                <SocialContainer >
+                    <CompanyImage src={"/linkedin.png"} onClick={() => ImageButton("https://www.linkedin.com/in/omar-assaf97")} style={{ cursor: 'pointer' }} />
+                    <CompanyImage src={"/github.png"} onClick={() => ImageButton("https://github.com/Omar-H-Assaf")} style={{ cursor: 'pointer' }} />
+                </SocialContainer>
                 <Button onClick={resumeDownload}>
                     <div>
-                        Resume
+                        My Resume
                     </div>
                 </Button>
-            </NavLabelContainer>
 
-        </Nav>
+        </Header>
 
     )
 }

@@ -1,10 +1,18 @@
-import NavBar from './nav';
 import MainPage from './main_page';
 import { useEffect } from 'react';
+import Nav2 from './nav2';
+import { Poppins } from 'next/font/google'
+
+const inter = Poppins({
+  subsets: ['devanagari'],
+weight: '500'
+})
+
 
 export default function Home() {
+
   useEffect(() => {
-    if (!/localhost/.test(window.location.href)){
+    if (!/localhost/.test(window.location.href)) {
       const script = document.createElement('script');
       script.async = true;
       script.src = "https://www.googletagmanager.com/gtag/js?id=G-9ZMDB3JB76";
@@ -16,19 +24,34 @@ export default function Home() {
     }
 
   }, [])
+
   return (
-    <div>
-     <NavBar />
-     <MainPage />
+    < div style={{
+      display: 'grid',
+      gridTemplateColumns: '60px 1fr',
+    }
+    }
+      className={inter.className}
+    >
+      <Nav2 />
+      <main>
+        <MainPage />
+      </main>
       <style jsx global>{`
+      @font-face {
+  font-family: 'Poppins';
+  src: url('../public/Poppins/Poppins-Regular.ttf') format('truetype');
+}
         html,
         body {
           padding: 0;
           margin: 0;
           width: 100%;
           scroll-behavior: smooth;
-          background-color: #2F4858;
+          background-color: #111;
           display: flex;
+          font-family: __Poppins_d4b8fc,__Poppins_Fallback_d4b8fc;
+          font-style: normal;
           font-family:
             -apple-system,
             BlinkMacSystemFont,
@@ -46,7 +69,6 @@ export default function Home() {
           box-sizing: border-box;
         }
     .timeline {
-      background: var(--primary-color);
       margin: 20px auto;
       padding: 20px;
       font-size: 15px;
@@ -167,17 +189,7 @@ export default function Home() {
     right: -45px;
 }
 
-.year {
-    margin-top: 0;
-}
-.ocean { 
-  height: 5%;
-  width:100%;
-  position:absolute;
-  bottom:0;
-  left:0;
-  background: #015871;
-}
+
 
 .wave {
   background: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/85486/wave.svg) repeat-x; 
@@ -188,28 +200,27 @@ export default function Home() {
   animation: wave 7s cubic-bezier( 0.36, 0.45, 0.63, 0.53) infinite;
   transform: translate3d(0, 0, 0);
 }
-
-.wave:nth-of-type(2) {
-  top: -175px;
-  animation: wave 7s cubic-bezier( 0.36, 0.45, 0.63, 0.53) -.125s infinite, swell 7s ease -1.25s infinite;
-  opacity: 1;
+.lds-dual-ring {
+  display: inline-block;
+  width: 30px;
+  height: 30px;
 }
-
-@keyframes wave {
+.lds-dual-ring:after {
+  content: " ";
+  display: block;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  border: 6px solid #fff;
+  border-color: #fff transparent #fff transparent;
+  animation: lds-dual-ring 1.2s linear infinite;
+}
+@keyframes lds-dual-ring {
   0% {
-    margin-left: 0;
+    transform: rotate(0deg);
   }
   100% {
-    margin-left: -1600px;
-  }
-}
-
-@keyframes swell {
-  0%, 100% {
-    transform: translate3d(0,-25px,0);
-  }
-  50% {
-    transform: translate3d(0,5px,0);
+    transform: rotate(360deg);
   }
 }
 

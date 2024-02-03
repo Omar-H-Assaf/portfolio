@@ -1,7 +1,7 @@
 import { styled } from "styled-components";
 
 export const BoxContainer = styled.div({
-    backgroundColor: '#2F4858',
+    backgroundColor: '#232323',
     width: '50%',
     borderRadius: '20px',
     display: 'flex',
@@ -40,16 +40,29 @@ export const TextArea = styled.textarea({
 export const Button = styled.input({
     width: "100%",
     textDecoration: 'none',
-textAlign: 'center',
-padding: '13px 16px',
-marginTop: '2px',
-borderRadius: '12px',
-border: 'none',
-color: 'rgb(242, 243, 244)',
-fontZize: '18px',
-fontWeight: '600',
-cursor: 'pointer',
-    background: 'linear-gradient(to right top, #65d2a3, #3abfb1, #30a9b5, #4592ac, #587b98)'
+    textAlign: 'center',
+    padding: '13px 16px',
+    marginTop: '2px',
+    borderRadius: '12px',
+    border: 'none',
+    color: '#0aff9d',
+    fontZize: '18px',
+    fontWeight: '600',
+    cursor: 'pointer',
+    background: 'transparent',
+    border: '1px solid #0aff9d',
+    transition: 'background-color 0.3s ease',
+    '&:before': {
+        transform: 'scaleX(0)',
+        transition: 'transform 0.3s ease',
+    },
+    '&:hover': {
+        background: '#0aff9d',
+        color: '#111',
+        '&:before': {
+            transform: 'scaleX(1)',
+        },
+    }
 })
 
 export default function Home1() {

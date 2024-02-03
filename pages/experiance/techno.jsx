@@ -1,7 +1,8 @@
-import { useState } from "react";
-import { NameLabel } from "../main_page/style";
+import { useEffect, useState } from "react";
+import { HomeH1, Line, NameLabel, SpanDot, TitleContainer } from "../main_page/style";
 import { CategoryContainer, SelectCategory, TechnoImage, TechnoText, Tool } from "./style";
 import { AnimatePresence, motion } from "framer-motion";
+import axios from "axios";
 
 const arr = [
     {
@@ -10,69 +11,69 @@ const arr = [
         type: ["Frontend", "All"]
     },
     {
-        name: "Node.JS",
-        src: "https://assaf-omar-portfolio.s3.amazonaws.com/images/nodejs.svg",
-        type: ["Backend", "All"]
+        "skillName": "Node.JS",
+        "src": "https://assaf-omar-portfolio.s3.amazonaws.com/images/nodejs.svg",
+        "types": ["Backend", "All"]
     },
     {
-        name: "Next.JS",
-        src: "https://assaf-omar-portfolio.s3.amazonaws.com/images/nextjs.svg",
-        type: ["Frontend", "All"]
+        "skillName": "Next.JS",
+        "src": "https://assaf-omar-portfolio.s3.amazonaws.com/images/nextjs.svg",
+        "types": ["Frontend", "All"]
     },
     {
-        name: "GraphQL",
-        src: "https://assaf-omar-portfolio.s3.amazonaws.com/images/graphql.svg",
-        type: ["Frontend", "All"]
+        "skillName": "GraphQL",
+        "src": "https://assaf-omar-portfolio.s3.amazonaws.com/images/graphql.svg",
+        "types": ["Frontend", "All"]
     },
     {
-        name: "JavaScript",
-        src: "https://assaf-omar-portfolio.s3.amazonaws.com/images/java-script.png",
-        type: ["Frontend", "Backend", "All"]
+        "skillName": "JavaScript",
+        "src": "https://assaf-omar-portfolio.s3.amazonaws.com/images/java-script.png",
+        "types": ["Frontend", "Backend", "All"]
     },
     {
-        name: "TypeScript",
-        src: "https://assaf-omar-portfolio.s3.amazonaws.com/images/typescript.png",
-        type: ["Frontend", "Backend", "All"]
+        "skillName": "TypeScript",
+        "src": "https://assaf-omar-portfolio.s3.amazonaws.com/images/typescript.png",
+        "types": ["Frontend", "Backend", "All"]
     },
     {
-        name: "Jira",
-        src: "https://assaf-omar-portfolio.s3.amazonaws.com/images/jira.svg",
-        type: ["Others", "All"]
+        "skillName": "Jira",
+        "src": "https://assaf-omar-portfolio.s3.amazonaws.com/images/jira.svg",
+        "types": ["Others", "All"]
     },
     {
-        name: "Python",
-        src: "https://assaf-omar-portfolio.s3.amazonaws.com/images/python.png",
-        type: ["Backend", "All"]
+        "skillName": "Python",
+        "src": "https://assaf-omar-portfolio.s3.amazonaws.com/images/python.png",
+        "types": ["Backend", "All"]
     },
     {
-        name: "VS Code",
-        src: "https://assaf-omar-portfolio.s3.amazonaws.com/images/vs-code.svg",
-        type: ["Others", "All"]
+        "skillName": "VS Code",
+        "src": "https://assaf-omar-portfolio.s3.amazonaws.com/images/vs-code.svg",
+        "types": ["Others", "All"]
     },
     {
-        name: "MongoDB",
-        src: "https://assaf-omar-portfolio.s3.amazonaws.com/images/mongodb.png",
-        type: ["Backend", "All"]
+        "skillName": "MongoDB",
+        "src": "https://assaf-omar-portfolio.s3.amazonaws.com/images/mongodb.png",
+        "types": ["Backend", "All"]
     },
     {
-        name: "MySQL",
-        src: "https://assaf-omar-portfolio.s3.amazonaws.com/images/mysql.png",
-        type: ["Backend", "All"]
+        "skillName": "MySQL",
+        "src": "https://assaf-omar-portfolio.s3.amazonaws.com/images/mysql.png",
+        "types": ["Backend", "All"]
     },
     {
-        name: "Jest",
-        src: "https://assaf-omar-portfolio.s3.amazonaws.com/images/Jest.svg",
-        type: ["Frontend", "Backend", "All"]
+        "skillName": "Jest",
+        "src": "https://assaf-omar-portfolio.s3.amazonaws.com/images/Jest.svg",
+        "types": ["Frontend", "Backend", "All"]
     },
     {
-        name: "AWS",
-        src: "https://assaf-omar-portfolio.s3.amazonaws.com/images/amazon-aws.svg",
-        type: ["Other", "All"]
+        "skillName": "AWS",
+        "src": "https://assaf-omar-portfolio.s3.amazonaws.com/images/amazon-aws.svg",
+        "types": ["Other", "All"]
     },
     {
-        name: "WCAG 2.1",
-        src: "https://assaf-omar-portfolio.s3.amazonaws.com/images/WCAG.png",
-        type: ["Frontend", "All"]
+        "skillName": "WCAG 2.1",
+        "src": "https://assaf-omar-portfolio.s3.amazonaws.com/images/WCAG.png",
+        "types": ["Frontend", "All"]
     }
 ];
 
@@ -103,11 +104,25 @@ export default function Techno() {
         setSelected(select)
     }
 
+    const [skills, setSkills] = useState([])
+
+    useEffect(()=> {
+        axios.get("https://lnqchk9qcd.execute-api.us-east-1.amazonaws.com/v1/skills")
+            .then((res) => setSkills(res.data.response.Items))
+            .catch((err) => console.log(err))
+    }, [])
+
+
     return (
         <>
-            <NameLabel>
-                Skills
-            </NameLabel>
+            <TitleContainer style={{ flexDirection: 'row-reverse', paddingTop: '9.6rem'}}>
+                <HomeH1 style={{ fontSize: '3rem' }}>
+                    Skills
+                    <SpanDot>.</SpanDot>
+
+                </HomeH1>
+                <Line />
+            </TitleContainer>
             <CategoryContainer>
                 <SelectCategory selected={selected === 'All'} onClick={() => categorySelected('All')}>All</SelectCategory>
                 <SelectCategory selected={selected === 'Frontend'} onClick={() => categorySelected('Frontend')}>Frontend</SelectCategory>
@@ -117,7 +132,7 @@ export default function Techno() {
 
             <Tool className="row">
                 <AnimatePresence>
-                    {arr.filter(e => e.type.includes(selected)).map((elm, index) => {
+                    {skills.filter(e => e.types.SS.includes(selected)).map((elm, index) => {
                         return (
                             <motion.div
                                 className="col-md-4 col-sm-6"
@@ -128,8 +143,8 @@ export default function Techno() {
                                 animate={{ transform: "scale(1)" }}
                                 exit={{ transform: "scale(0)" }}
                             >
-                                <TechnoImage src={elm.src} />
-                                <TechnoText>{elm.name}</TechnoText>
+                                <TechnoImage src={elm.src.S} />
+                                <TechnoText>{elm.skillName.S}</TechnoText>
                             </motion.div>
                         )
                     })}
