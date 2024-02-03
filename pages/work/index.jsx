@@ -5,7 +5,7 @@ import { useState } from "react";
 import F1Logo from "../../public/f1/f1_logo.svg"
 import RealEstate from "../../public/real-estate/icons8-real-estate-100.png"
 import ChatIcon from "../../public/chat/chat-4-512.png"
-import { ContentLabel, NameLabel } from "../main_page/style";
+import { ContentLabel, HomeH1, Line, NameLabel, SpanDot, TitleContainer } from "../main_page/style";
 import Link from "next/link";
 
 export default function Work() {
@@ -17,12 +17,14 @@ export default function Work() {
 
     return (
         <AboutContainer id="work">
-            <NameLabel>
-                Projects
-            </NameLabel>
-            <NameLabel>
-                This is a collection of some projects.
-            </NameLabel>
+            <TitleContainer>
+                <HomeH1 style={{ fontSize: '3rem' }}>
+                    Projects
+                    <SpanDot>.</SpanDot>
+
+                </HomeH1>
+                <Line />
+            </TitleContainer>
             <WorkContainer>
                 <ProjectConatinerWidth color="#e10600">
                     <ImageWidth src={F1Logo.src} />

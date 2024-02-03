@@ -19,7 +19,6 @@ export const Href = styled.a({
 });
 
 export const JobContainer = styled.div({
-    fontFamily: 'Andale Mono, monospace',
     fontSize: '1.5rem',
     color: '#EBEBEB',
     cursor: 'default',
@@ -33,7 +32,6 @@ export const JobContainer = styled.div({
 });
 
 export const JobContent = styled.ul({
-    fontFamily: 'Andale Mono, monospace',
     fontSize: '1rem',
     color: '#EBEBEB',
     margin: '2rem'
@@ -49,11 +47,9 @@ export const JobTitle = styled.div({
 
 export const ExperianceContainer = styled.div({
     alignItems: "center",
-    height: "100%",
     width: "100%",
     paddingTop: '5rem',
-    padding: '4rem',
-    backgroundImage: 'linear-gradient(to right top, #237e8b, #257987, #277383, #286e7f, #2a697a, #2c6476, #2d6072, #2e5b6d, #2f5668, #2f5163, #2f4d5d, #2f4858);',
+    padding: '9.6rem',
     '@media (max-width: 768px)': {
         paddingLeft: '3rem',
         paddingRight: '3rem',
@@ -99,7 +95,6 @@ export const Content = styled.div({
 export const SocialContainer = styled.div({
     display: 'flex',
     gap: 20,
-    paddingBottom: '3rem'
 });
 
 export const ToolContainer = styled.div({
@@ -124,8 +119,8 @@ export const ToolContainer = styled.div({
 export const CompanyImage = styled.img({
     borderRadius: '10px', boxShadow: 'transparent 0 0 0 2px inset',
     overflow: 'hidden',
-    height: '4.125rem',
-    width: '4.125rem',
+    height: '2.5rem',
+    width: '2.5rem',
     '@media (max-width: 768px)': {
         height: '10.125rem',
         width: '10.125rem',

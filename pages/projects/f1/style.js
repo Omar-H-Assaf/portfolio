@@ -55,7 +55,6 @@ export const HeadLineContainer = styled.div({
 
 export const Header = styled.h2({
     fontSize: '36px',
-    fontFamily: "sans-serif",
     lineHeight: '48px',
     fontWeight: '400',
     color: 'rgb(240, 242, 248)',
@@ -69,7 +68,6 @@ export const Header = styled.h2({
 
 export const Description = styled.p({
     fontSize: '20px',
-    fontFamily: "sans-serif",
     lineHeight: '40px',
     letterSpacing: '0.25px',
     fontWeight: '400',
@@ -89,7 +87,6 @@ export const DescriptionContainer = styled.div({
 
 export const Description2 = styled.p({
     fontSize: '15px',
-    fontFamily: "sans-serif",
     letterSpacing: '0.5px',
     fontWeight: '400',
     color: 'rgb(240, 242, 248)',
@@ -104,7 +101,6 @@ export const Description2 = styled.p({
 
 export const HrefGitHub = styled.a({
     fontSize: '15px',
-    fontFamily: "sans-serif",
     letterSpacing: '0.5px',
     fontWeight: '400',
     color: 'rgb(240, 242, 248)',

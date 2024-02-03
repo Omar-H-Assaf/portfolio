@@ -8,7 +8,6 @@ export const WorkContainer = styled.div({
     overflow: 'hidden',
     gap: '60px',
     borderRadius: '32px',
-    width: '100%%',
     padding: '2rem',
     '@media (max-width: 768px)': {
         flexDirection: 'column',
@@ -78,7 +77,6 @@ export const IconContainer = styled.div({
 });
 
 export const ProjectName = styled.p({
-    fontFamily: 'Andale Mono, monospace',
     fontSize: '0.6rem',
     color: '#333333',
     paddingLeft: '1rem',
