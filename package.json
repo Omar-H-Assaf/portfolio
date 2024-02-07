@@ -3,7 +3,8 @@
   "scripts": {
     "build": "next build",
     "dev": "next dev",
-    "start": "next start"
+    "start": "next start",
+    "aws": "aws s3 sync .next/ s3://www.assafomar.com"
   },
   "dependencies": {
     "@emotion/styled": "^11.11.0",
